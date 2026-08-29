@@ -39,12 +39,12 @@ export function SiteHeader() {
       <div className="island-nav">
         <SiteLogo inverse={onHome && !scrolled} />
         <nav className="island-links" aria-label="Main navigation">
-          {navItems.map(([label, href]) => <Link key={href} href={href} className={pathname.startsWith(href) ? 'active' : ''}>{label}</Link>)}
+          {navItems.map(([label, href]) => <Link key={href} href={href} className={pathname.startsWith(href) ? 'active' : ''} aria-current={pathname.startsWith(href) ? 'page' : undefined}>{label}</Link>)}
         </nav>
         <Link href="/contact" className="island-cta">Start a project <ArrowUpRight size={15} /></Link>
         <button className="island-menu" type="button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} onClick={() => setOpen((value) => !value)}>{open ? <X /> : <Menu />}</button>
       </div>
-      {open && <nav className="island-mobile" aria-label="Mobile navigation">{navItems.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}<Link href="/contact">Start a project</Link></nav>}
+      {open && <nav className="island-mobile" aria-label="Mobile navigation">{navItems.map(([label, href]) => <Link key={href} href={href} aria-current={pathname.startsWith(href) ? 'page' : undefined}>{label}</Link>)}<Link href="/contact">Start a project</Link></nav>}
     </header>
   );
 }

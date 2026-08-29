@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Calculator, Info, SunMedium } from 'lucide-react';
+import { ArrowRight, Info, SunMedium } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
 export function SolarCalculator() {

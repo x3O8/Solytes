@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Building2, CircleCheck, Moon, MoveRight, SunMedium } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Building2, CircleCheck, Moon, MoveRight, SunMedium } from 'lucide-react';
 import { useState } from 'react';
-import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/products';
 
 export default function Home() {
@@ -35,7 +34,10 @@ export default function Home() {
 
       <section className="home-products section soft-section">
         <div className="shell section-top"><div><span className="kicker">Selected products</span><h2>Lighting that earns<br />its place.</h2></div><Link href="/products" className="arrow-link">View the full range <ArrowRight size={16} /></Link></div>
-        <div className="shell featured-products"><ProductCard product={products[0]} featured /><div className="product-stack"><ProductCard product={products[1]} /><ProductCard product={products[2]} /></div></div>
+        <div className="shell home-product-display">
+          <Link href={`/products/${products[0].slug}`} className="home-product-feature"><Image src={products[0].image} alt={products[0].name} fill sizes="(max-width: 900px) 100vw, 68vw" /><div><span>{products[0].category}</span><h3>{products[0].name}</h3><p>{products[0].summary}</p><b>View product <ArrowUpRight size={15} /></b></div></Link>
+          <div className="home-product-directory">{products.slice(1).map((product, index) => <Link href={`/products/${product.slug}`} key={product.slug}><span>{String(index + 2).padStart(2, '0')}</span><div><small>{product.category}</small><strong>{product.name}</strong></div><ArrowUpRight size={17} /></Link>)}</div>
+        </div>
       </section>
 
       <section className="epc-home">

@@ -18,8 +18,19 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    image: `https://solytes-solar.kprasadkodoth.chatgpt.site${product.image}`,
+    description: product.description,
+    category: product.category,
+    brand: { '@type': 'Brand', name: 'Solytes' },
+    url: `https://solytes-solar.kprasadkodoth.chatgpt.site/products/${product.slug}`,
+  };
   return (
     <main className="page-main product-detail">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema).replace(/</g, '\\u003c') }} />
       <div className="shell product-breadcrumb"><Link href="/products"><ArrowLeft size={15} /> All products</Link><span>{product.category}</span></div>
       <section className="shell product-detail-hero">
         <div className="product-detail-image"><Image src={product.image} alt={product.name} fill priority sizes="(max-width: 900px) 100vw, 55vw" /></div>
