@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { SiteFooter } from '@/components/site-footer';
+import { SiteHeader } from '@/components/site-header';
 import './globals.css';
 
 const geistSans = Geist({
@@ -13,13 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Solytes | Thoughtful solar for modern homes',
-  description: 'Premium rooftop solar designed, installed and supported by one expert team.',
+  metadataBase: new URL('https://solytes-solar.kprasadkodoth.chatgpt.site'),
+  title: { default: 'Solytes | Solar lighting and EPC projects', template: '%s | Solytes' },
+  description: 'Browse solar garden, brick, wall and street lights, or plan a rooftop and EPC solar project with Solytes.',
+  keywords: ['solar lights', 'solar street lights', 'solar garden lights', 'solar EPC', 'rooftop solar'],
   openGraph: {
-    title: 'Solytes | Own your power',
-    description: 'Thoughtful solar for modern homes.',
-    images: ['/solytes-hero.png'],
+    title: 'Solytes | Solar lighting and EPC projects',
+    description: 'Solar products and project execution shaped around real sites.',
+    images: ['/solytes-hero-day.png'],
+    type: 'website',
   },
+  twitter: { card: 'summary_large_image', images: ['/solytes-hero-day.png'] },
 };
 
 export default function RootLayout({
@@ -32,7 +38,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
