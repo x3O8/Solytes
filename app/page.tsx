@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import {
   ArrowRight, BadgeCheck, BatteryCharging, ChevronRight, CircleCheck,
-  Gauge, Menu, ShieldCheck, Sparkles, SunMedium, X, Zap,
+  Gauge, Menu, Moon, ShieldCheck, Sparkles, SunMedium, X, Zap,
 } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
@@ -21,6 +21,7 @@ function Logo({ inverse = false }: { inverse?: boolean }) {
 export default function Home() {
   const [monthlyBill, setMonthlyBill] = useState(6500);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isNight, setIsNight] = useState(false);
   const estimate = useMemo(() => {
     const system = Math.max(2, Math.round(monthlyBill / 1200));
     const annual = Math.round(monthlyBill * 12 * 0.82 / 1000) * 1000;
@@ -30,8 +31,9 @@ export default function Home() {
 
   return (
     <main id="top">
-      <section className="hero">
-        <Image src="/solytes-hero.png" alt="Contemporary home powered by rooftop solar at dusk" fill priority className="hero-image" sizes="100vw" />
+      <section className={`hero ${isNight ? 'is-night' : 'is-day'}`}>
+        <Image src="/solytes-hero-day.png" alt="Contemporary solar-powered home in daylight" fill priority className="hero-image hero-image-day" sizes="100vw" />
+        <Image src="/solytes-hero-night.png" alt="The same solar-powered home illuminated at night" fill priority className="hero-image hero-image-night" sizes="100vw" />
         <div className="hero-shade" />
         <header className="nav shell">
           <Logo inverse />
@@ -46,6 +48,11 @@ export default function Home() {
           <p>Beautiful rooftop solar, engineered for your home and managed by one expert team—from first sketch to first unit of clean energy.</p>
           <div className="hero-actions"><a href="#savings" className="button button-light">See what you could save <ArrowRight size={17} /></a><a href="#how" className="text-link light-link">Explore the experience <ChevronRight size={16} /></a></div>
         </div>
+        <div className="time-switch" role="group" aria-label="Choose time of day">
+          <button type="button" className={!isNight ? 'active' : ''} aria-pressed={!isNight} onClick={() => setIsNight(false)}><SunMedium size={16} /><span><strong>Morning</strong><small>Solar generating</small></span></button>
+          <button type="button" className={isNight ? 'active' : ''} aria-pressed={isNight} onClick={() => setIsNight(true)}><Moon size={15} /><span><strong>Night</strong><small>Home illuminated</small></span></button>
+        </div>
+        <span className="sr-only" aria-live="polite">{isNight ? 'Night view selected' : 'Morning view selected'}</span>
         <div className="hero-proof shell"><div><CircleCheck size={17} /><span>Premium tier-1 panels</span></div><div><CircleCheck size={17} /><span>End-to-end installation</span></div><div><CircleCheck size={17} /><span>Live generation tracking</span></div></div>
       </section>
 

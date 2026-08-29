@@ -19,8 +19,12 @@ button,input { font:inherit; }
 .shell { width:min(1180px,calc(100% - 48px)); margin-inline:auto; }
 
 .hero { min-height:760px; height:100svh; max-height:940px; position:relative; isolation:isolate; overflow:hidden; color:#fff; }
-.hero-image { object-fit:cover; object-position:center 54%; z-index:-3; }
-.hero-shade { position:absolute; inset:0; z-index:-2; background:linear-gradient(180deg,rgba(8,16,13,.82) 0%,rgba(8,16,13,.18) 42%,rgba(8,16,13,.2) 62%,rgba(8,16,13,.84) 100%); }
+.hero-image { object-fit:cover; object-position:center 54%; z-index:-4; transition:opacity 1.35s cubic-bezier(.22,.61,.36,1),transform 1.8s ease,filter 1.35s ease; will-change:opacity,filter; }
+.hero-image-night { opacity:0; filter:brightness(1.08); transform:scale(1.012); }
+.hero.is-night .hero-image-day { opacity:0; filter:brightness(.72); transform:scale(1.012); }
+.hero.is-night .hero-image-night { opacity:1; filter:brightness(1); transform:scale(1); }
+.hero-shade { position:absolute; inset:0; z-index:-2; background:linear-gradient(180deg,rgba(8,16,13,.7) 0%,rgba(8,16,13,.06) 42%,rgba(8,16,13,.12) 62%,rgba(8,16,13,.82) 100%); transition:background 1.35s ease; }
+.hero.is-night .hero-shade { background:linear-gradient(180deg,rgba(8,16,13,.82) 0%,rgba(8,16,13,.18) 42%,rgba(8,16,13,.2) 62%,rgba(8,16,13,.84) 100%); }
 .nav { height:88px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:32px; border-bottom:1px solid rgba(255,255,255,.16); }
 .brand { display:inline-flex; align-items:center; width:max-content; gap:10px; font-weight:650; font-size:21px; letter-spacing:-.04em; }
 .brand-mark { width:32px; height:32px; display:grid; place-items:center; border-radius:50%; background:#e9ff85; color:#132419; }
@@ -49,6 +53,15 @@ button,input { font:inherit; }
 .hero-proof>div { display:flex; align-items:center; gap:10px; min-height:78px; font-size:13px; color:rgba(255,255,255,.78); }
 .hero-proof>div+div { padding-left:28px; border-left:1px solid rgba(255,255,255,.16); }
 .hero-proof svg { color:#e9ff85; }
+.time-switch { position:absolute; z-index:2; left:50%; bottom:98px; display:grid; grid-template-columns:1fr 1fr; width:min(390px,calc(100% - 32px)); padding:5px; transform:translateX(-50%); border:1px solid rgba(255,255,255,.22); border-radius:12px; background:rgba(10,18,14,.52); box-shadow:0 18px 50px rgba(0,0,0,.22); backdrop-filter:blur(15px); }
+.time-switch button { min-height:57px; display:flex; align-items:center; justify-content:center; gap:10px; padding:8px 15px; border:0; border-radius:8px; background:transparent; color:rgba(255,255,255,.64); cursor:pointer; transition:background-color .35s ease,color .35s ease,transform .2s ease; }
+.time-switch button:hover { color:#fff; }
+.time-switch button.active { background:#f8f8f1; color:#162019; box-shadow:0 5px 20px rgba(0,0,0,.14); }
+.time-switch button:active { transform:scale(.98); }
+.time-switch button:focus-visible { outline:3px solid #e9ff85; outline-offset:3px; }
+.time-switch button span { display:flex; align-items:flex-start; flex-direction:column; line-height:1.05; }
+.time-switch strong { font-size:13px; }
+.time-switch small { margin-top:5px; font-size:9px; opacity:.68; }
 
 .trust-strip { background:#e9ff85; }
 .trust-grid { min-height:128px; display:grid; grid-template-columns:1.5fr repeat(3,1fr); align-items:center; }
@@ -125,6 +138,7 @@ footer { padding:75px 0 30px; background:#e8e8e1; }
 @media (max-width:640px) {
   .shell { width:min(100% - 32px,1180px); } .hero { min-height:720px; max-height:none; } .nav { height:76px; } .hero-content { padding-top:100px; }
   .hero h1 { font-size:clamp(48px,15vw,70px); } .hero-content>p { font-size:15px; } .hero-actions { align-items:flex-start; flex-direction:column; gap:20px; }
+  .time-switch { bottom:148px; }
   .hero-proof { grid-template-columns:1fr; padding-block:15px; } .hero-proof>div { min-height:34px; } .hero-proof>div+div { padding-left:0; border-left:0; }
   .trust-grid { grid-template-columns:1fr 1fr; padding-block:25px; gap:24px 0; } .trust-grid>p { grid-column:1/-1; } .trust-grid>div { padding-left:18px; } .trust-grid strong { font-size:23px; }
   .section { padding-block:90px; } .section-heading { margin-bottom:50px; } .process-grid { grid-template-columns:1fr; }
