@@ -224,32 +224,27 @@ textarea:focus-visible {
   align-items: center;
   gap: 30px;
   padding: 0 clamp(16px, 2.4vw, 34px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 22px;
-  background: rgba(8, 24, 16, 0.16);
-  box-shadow: 0 12px 34px rgba(7, 21, 14, 0.06);
-  backdrop-filter: blur(16px) saturate(135%);
+  border-radius: inherit;
+}
+.island-glass {
+  width: 100%;
+  margin: auto;
   transform-origin: center top;
   transition:
     transform 0.62s var(--ease-out-quart),
-    background 0.4s ease,
-    border-color 0.4s ease,
-    box-shadow 0.4s ease,
-    backdrop-filter 0.4s ease;
+    box-shadow 0.4s ease;
 }
-.island-wrap.scrolled .island-nav,
-.island-wrap.on-page .island-nav {
-  border-color: rgba(255, 255, 255, 0.7);
-  background: rgba(247, 250, 247, 0.76);
+.island-glass .glass-surface__content {
+  padding: 0;
+}
+.island-wrap.scrolled .island-glass,
+.island-wrap.on-page .island-glass {
   box-shadow: 0 16px 48px rgba(20, 42, 30, 0.12);
-  backdrop-filter: blur(24px) saturate(155%);
 }
 .island-wrap.compact {
   top: 6px;
 }
-.island-wrap.compact .island-nav {
-  border-radius: 24px;
-  background: rgba(247, 250, 247, 0.86);
+.island-wrap.compact .island-glass {
   transform: scale(0.82);
 }
 .site-logo {
@@ -1688,13 +1683,15 @@ textarea:focus-visible {
   padding-block: 100px;
 }
 .newsletter-card {
-  width: min(740px, 100%);
+  width: 100%;
   padding: clamp(34px, 5.5vw, 66px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 28px;
-  background: rgba(237, 248, 245, 0.58);
+  border-radius: inherit;
+}
+.newsletter-glass {
   box-shadow: 0 30px 90px rgba(37, 70, 55, 0.16);
-  backdrop-filter: blur(22px) saturate(135%);
+}
+.newsletter-glass .glass-surface__content {
+  padding: 0;
 }
 .newsletter-kicker {
   display: block;
@@ -1886,7 +1883,7 @@ textarea:focus-visible {
   .island-wrap.compact {
     top: 4px;
   }
-  .island-wrap.compact .island-nav {
+  .island-wrap.compact .island-glass {
     transform: scale(1);
   }
   .island-mobile {
@@ -2170,8 +2167,8 @@ textarea:focus-visible {
   html {
     scrollbar-color: auto;
   }
-  .newsletter-card,
-  .island-nav {
+  .newsletter-glass,
+  .island-glass {
     border: 1px solid CanvasText;
   }
 }
