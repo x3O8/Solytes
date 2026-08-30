@@ -531,6 +531,36 @@ textarea:focus-visible {
   align-items: end;
   gap: 90px;
 }
+.home-scroll-background {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(247, 251, 250, 0.78) 0%,
+      rgba(239, 249, 252, 0.34) 43%,
+      rgba(235, 246, 239, 0.08) 100%
+    ),
+    url('/solar-sky-scroll-background.png') center top / cover no-repeat;
+}
+.home-scroll-background .logo-loop-section {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px) saturate(1.08);
+}
+.home-scroll-background .home-products {
+  background: rgba(249, 251, 247, 0.74);
+  backdrop-filter: blur(18px) saturate(1.06);
+}
+.home-scroll-background .sky-transition-section {
+  background: transparent;
+}
+.home-scroll-background .sky-transition-section::after {
+  background: linear-gradient(
+    180deg,
+    rgba(244, 251, 251, 0.28) 0%,
+    rgba(232, 246, 239, 0.04) 100%
+  );
+}
 .home-intro h2,
 .section-top h2,
 .epc-home h2,

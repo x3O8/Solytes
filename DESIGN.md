@@ -59,7 +59,7 @@ components:
 
 The site should feel like an architect's solar field guide: daylight, roof planes, fixture silhouettes, specification notes, and disciplined site photography. It is expressive enough to establish a memorable solar brand, but clear enough for a customer comparing products or planning a real installation.
 
-The lower-page atmosphere is continuous rather than assembled from separate decorative strips: one generated sky-to-solar-meadow landscape leads from the calculator transition into the newsletter and continues behind the footer. Footer information sits on one quiet translucent plane so the artwork reads as a single place rather than a set of background panels.
+The homepage below the hero uses one vertically extended sky-to-solar-meadow artwork as its continuous scrolling backdrop. Content sections use restrained translucent planes where contrast requires them, allowing the sky to remain visible and the meadow to arrive naturally near the lower page. Footer information sits on one quiet translucent plane so the artwork reads as a single place rather than a set of background panels.
 
 ### Product context and register
 
