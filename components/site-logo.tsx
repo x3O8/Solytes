@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export function SiteLogo({ inverse = false }: { inverse?: boolean }) {
@@ -8,16 +7,10 @@ export function SiteLogo({ inverse = false }: { inverse?: boolean }) {
       className={`site-logo ${inverse ? 'inverse' : ''}`}
       aria-label="Solytes home"
     >
-      <span className="site-logo-mark" aria-hidden="true">
-        <Image
-          src="/solytes-old-logo.svg"
-          alt=""
-          width={40}
-          height={36}
-          unoptimized
-        />
+      <span className="site-logo-lockup" aria-hidden="true">
+        <span className="site-logo-word">SOLYTES</span>
+        <span className="site-logo-tagline">Your energy independence</span>
       </span>
-      <span className="site-logo-word">solytes</span>
     </Link>
   );
 }

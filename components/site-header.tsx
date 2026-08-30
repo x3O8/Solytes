@@ -45,7 +45,11 @@ export function SiteHeader() {
       className={`island-wrap ${scrolled ? 'scrolled' : ''} ${compact ? 'compact' : ''} ${onHome ? 'over-hero' : 'on-page'}`}
     >
       <GlassSurface
-        width="100%"
+        width={
+          compact
+            ? 'min(980px, calc(100vw - 40px))'
+            : 'min(1240px, calc(100vw - 40px))'
+        }
         height="auto"
         borderRadius={compact ? 24 : 22}
         borderWidth={0.08}

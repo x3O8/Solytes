@@ -19,7 +19,7 @@ typography:
   body:
     fontFamily: 'Manrope, Arial, sans-serif'
   logo:
-    fontFamily: 'Arial, Helvetica, sans-serif'
+    fontFamily: 'Space Grotesk, Arial Narrow, Arial, sans-serif'
 rounded:
   DEFAULT: '10px'
   control: '9px'
@@ -58,6 +58,8 @@ components:
 ### Creative North Star
 
 The site should feel like an architect's solar field guide: daylight, roof planes, fixture silhouettes, specification notes, and disciplined site photography. It is expressive enough to establish a memorable solar brand, but clear enough for a customer comparing products or planning a real installation.
+
+The lower-page atmosphere is continuous rather than assembled from separate decorative strips: one generated sky-to-solar-meadow landscape leads from the calculator transition into the newsletter and continues behind the footer. Footer information sits on one quiet translucent plane so the artwork reads as a single place rather than a set of background panels.
 
 ### Product context and register
 
@@ -103,7 +105,7 @@ Primary actions use forest green on pale surfaces and off-white on dark photogra
 
 ### Navigation and data display
 
-The floating header is shared by every route and exposes the active route. Mobile navigation uses the same destinations in a compact disclosure. Product indexes and EPC stage numbers are used only where the sequence or collection order is meaningful.
+The floating header is shared by every route and exposes the active route. Its expanded-to-compact transition changes the island's width and spacing while keeping its contents at a stable scale. The brand lockup uses the framed uppercase “SOLYTES” wordmark with “YOUR ENERGY INDEPENDENCE” as its supporting line. Mobile navigation uses the same destinations in a compact disclosure. Product indexes and EPC stage numbers are used only where the sequence or collection order is meaningful.
 
 ### Forms and overlays
 

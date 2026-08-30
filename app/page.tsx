@@ -192,17 +192,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="calculator-callout section shell">
-        <div>
-          <span className="kicker">Plan before you build</span>
-          <h2>What size solar system do you actually need?</h2>
-        </div>
-        <div className="calculator-mini">
-          <span>Start with your bill or monthly units</span>
-          <strong>Get a planning estimate in under a minute.</strong>
-          <Link href="/calculator" className="button button-dark">
-            Open solar calculator <ArrowRight size={17} />
-          </Link>
+      <section className="sky-transition-section">
+        <div className="calculator-callout section shell">
+          <div>
+            <span className="kicker">Plan before you build</span>
+            <h2>What size solar system do you actually need?</h2>
+          </div>
+          <div className="calculator-mini">
+            <span>Start with your bill or monthly units</span>
+            <strong>Get a planning estimate in under a minute.</strong>
+            <Link href="/calculator" className="button button-dark">
+              Open solar calculator <ArrowRight size={17} />
+            </Link>
+          </div>
         </div>
       </section>
     </main>
