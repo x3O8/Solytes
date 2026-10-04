@@ -1,5 +1,4 @@
 {
-  "framework": "vite",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".output"
+  "framework": "nitro",
+  "buildCommand": "npm run build"
 }
