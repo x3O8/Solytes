@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Manrope, Space_Grotesk } from 'next/font/google';
+import { Bodoni_Moda, Manrope, Roboto, Space_Grotesk } from 'next/font/google';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import './globals.css';
@@ -9,9 +9,20 @@ const manrope = Manrope({
   subsets: ['latin'],
 });
 
-const spaceGrotesk = Space_Grotesk({
+const bodoniModa = Bodoni_Moda({
   variable: '--font-display',
   subsets: ['latin'],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-logo-family',
+  subsets: ['latin'],
+});
+
+const roboto = Roboto({
+  variable: '--font-hero',
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -30,18 +41,21 @@ export const metadata: Metadata = {
     'rooftop solar',
   ],
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: '/solytes-y-favicon-v2.png',
+    shortcut: '/solytes-y-favicon-v2.png',
+    apple: '/solytes-y-favicon-v2.png',
   },
   openGraph: {
     title: 'Solytes | Solar lighting and EPC projects',
     description:
       'Solar products and project execution shaped around real sites.',
-    images: ['/solytes-hero-day.png'],
+    images: ['/solytes-field-home-day-v3.png'],
     type: 'website',
   },
-  twitter: { card: 'summary_large_image', images: ['/solytes-hero-day.png'] },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/solytes-field-home-day-v3.png'],
+  },
 };
 
 export default function RootLayout({
@@ -52,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${manrope.variable} ${bodoniModa.variable} ${spaceGrotesk.variable} ${roboto.variable} antialiased`}
       >
         <a href="#main-content" className="skip-link">
           Skip to main content

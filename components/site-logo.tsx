@@ -1,16 +1,30 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
-export function SiteLogo({ inverse = false }: { inverse?: boolean }) {
+export function SiteLogo({
+  inverse = false,
+  className = '',
+  variant = 'navbar',
+}: {
+  inverse?: boolean;
+  className?: string;
+  variant?: 'navbar' | 'footer';
+}) {
+  const isFooterMark = variant === 'footer';
+
   return (
     <Link
       href="/"
-      className={`site-logo ${inverse ? 'inverse' : ''}`}
+      className={`site-logo ${isFooterMark ? 'footer-logo' : 'navbar-logo'} ${inverse ? 'inverse' : ''} ${className}`}
       aria-label="Solytes home"
     >
-      <span className="site-logo-lockup" aria-hidden="true">
-        <span className="site-logo-word">SOLYTES</span>
-        <span className="site-logo-tagline">Your energy independence</span>
-      </span>
+      <Image
+        src="/solytes-official-wordmark-v3.png"
+        alt=""
+        width={763}
+        height={327}
+        priority
+      />
     </Link>
   );
 }

@@ -1,0 +1,268 @@
+.page {
+  padding-top: 116px;
+  background: #fff;
+}
+
+.hero {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: #edf1e8;
+}
+
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(48px, 6vw, 82px);
+}
+
+.heroCopy h1 {
+  max-width: 8.5ch;
+  margin: 20px 0 24px;
+  color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(52px, 6vw, 84px);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.heroCopy > p {
+  max-width: 510px;
+  margin: 0;
+  color: #5e7080;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-top: 34px;
+}
+
+.textLink {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--forest);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.textLink svg {
+  transition: transform 180ms ease;
+}
+
+.textLink:hover svg {
+  transform: translateX(3px);
+}
+
+.heroPoints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 50px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.heroPoints li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #526879;
+  font-size: 12px;
+}
+
+.heroPoints svg {
+  color: var(--badge-ink);
+}
+
+.heroVisual {
+  min-height: 590px;
+  position: relative;
+  overflow: hidden;
+  background: var(--forest);
+}
+
+.heroVisual > img {
+  object-fit: cover;
+  transition: transform 700ms var(--ease-out-quart);
+}
+
+.heroVisual::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(180deg, transparent 48%, rgb(7 22 37 / 58%));
+}
+
+.heroVisual:hover > img,
+.heroVisual:focus-visible > img {
+  transform: scale(1.025);
+}
+
+.featuredCard {
+  position: absolute;
+  z-index: 1;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 5px 20px;
+  padding: 22px 24px;
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: 14px;
+  background: rgb(15 34 53 / 78%);
+  color: #fff;
+  backdrop-filter: blur(14px);
+}
+
+.featuredCard span {
+  grid-column: 1 / -1;
+  color: var(--lime);
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.featuredCard strong {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 550;
+}
+
+.featuredCard small {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+}
+
+.collectionAnchor {
+  scroll-margin-top: 110px;
+}
+
+.guidance {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: clamp(40px, 8vw, 110px);
+  margin-block: 110px;
+  padding: clamp(42px, 6vw, 78px);
+  border-radius: 26px;
+  background: var(--sky);
+  color: var(--foreground);
+}
+
+.guidanceCopy h2 {
+  max-width: 11ch;
+  margin: 18px 0 22px;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(38px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.guidanceCopy p {
+  max-width: 520px;
+  margin: 0 0 30px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.guidanceList {
+  align-self: center;
+  display: grid;
+  border-top: 1px solid var(--border);
+}
+
+.guidanceList > span {
+  padding: 0 0 16px;
+  color: var(--badge-ink);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.guidanceList > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 0;
+  border-top: 1px solid var(--border);
+  color: var(--foreground);
+  font-size: 14px;
+}
+
+.guidanceList svg {
+  color: var(--lime);
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding-top: 100px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .heroVisual {
+    min-height: 470px;
+  }
+  .guidance {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding-top: 90px;
+  }
+  .hero {
+    border-radius: 20px;
+  }
+  .heroCopy {
+    padding: 38px 24px 42px;
+  }
+  .heroCopy h1 {
+    font-size: clamp(46px, 14vw, 64px);
+  }
+  .heroPoints {
+    margin-top: 38px;
+  }
+  .heroVisual {
+    min-height: 390px;
+  }
+  .featuredCard {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    padding: 18px;
+  }
+  .featuredCard small {
+    display: none;
+  }
+  .guidance {
+    margin-block: 72px;
+    padding: 36px 24px;
+    border-radius: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroVisual > img,
+  .textLink svg {
+    transition: none;
+  }
+}

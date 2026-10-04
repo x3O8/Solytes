@@ -25,7 +25,7 @@ export default function ContactPage() {
               <Mail />
               <span>
                 <small>Email</small>
-                <a href="mailto:hello@solytes.in">hello@solytes.in</a>
+                <a href="mailto:info@solytes.com">info@solytes.com</a>
               </span>
             </div>
             <div>

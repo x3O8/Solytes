@@ -1,13 +1,17 @@
 'use client';
 
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { ArrowRight, Info, SunMedium } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
 export function SolarCalculator() {
-  const [mode, setMode] = useState<'bill' | 'units'>('bill');
+  const query = useSearchParams();
+  const suppliedUnits = Number(query.get('units'));
+  const hasUnits = Number.isFinite(suppliedUnits) && suppliedUnits >= 100 && suppliedUnits <= 12000;
+  const [mode, setMode] = useState<'bill' | 'units'>(hasUnits ? 'units' : 'bill');
   const [bill, setBill] = useState(6500);
-  const [units, setUnits] = useState(780);
+  const [units, setUnits] = useState(hasUnits ? suppliedUnits : 780);
   const [tariff, setTariff] = useState(7.5);
   const [sunHours, setSunHours] = useState(5);
   const [shade, setShade] = useState(10);
@@ -42,6 +46,7 @@ export function SolarCalculator() {
           <button
             type="button"
             className={mode === 'bill' ? 'active' : ''}
+            aria-pressed={mode === 'bill'}
             onClick={() => setMode('bill')}
           >
             Use electricity bill
@@ -49,6 +54,7 @@ export function SolarCalculator() {
           <button
             type="button"
             className={mode === 'units' ? 'active' : ''}
+            aria-pressed={mode === 'units'}
             onClick={() => setMode('units')}
           >
             Use monthly units

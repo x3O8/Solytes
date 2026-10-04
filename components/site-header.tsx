@@ -1,116 +1,107 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ArrowUpRight, Menu, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import GlassSurface from './GlassSurface';
-import { SiteLogo } from './site-logo';
+import { ArrowUpRight, X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 
 const navItems = [
   ['Products', '/products'],
-  ['EPC Projects', '/projects'],
-  ['Calculator', '/calculator'],
+  ['Projects', '/projects'],
   ['Gallery', '/gallery'],
   ['About', '/about'],
+];
+const menuGroups = [
+  { title: 'Explore', links: [
+    ['Solar lighting', '/products'],
+    ['EPC projects', '/projects'],
+    ['Solar calculator', '/calculator'],
+    ['Applications gallery', '/gallery'],
+  ] },
+  { title: 'Company', links: [
+    ['About Solytes', '/about'],
+    ['Get in touch', '/contact'],
+  ] },
 ];
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const onHome = pathname === '/';
-  const [scrolled, setScrolled] = useState(!onHome);
-  const [compact, setCompact] = useState(false);
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const dialogRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
-    const update = () => {
-      setScrolled(!onHome || window.scrollY > 24);
-      setCompact(
-        onHome
-          ? window.scrollY > window.innerHeight * 0.78
-          : window.scrollY > 180,
-      );
-    };
+    const update = () => setScrolled(window.scrollY > 50);
     update();
     window.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-    return () => {
-      window.removeEventListener('scroll', update);
-      window.removeEventListener('resize', update);
-    };
-  }, [onHome]);
+    return () => window.removeEventListener('scroll', update);
+  }, []);
+
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    if (open) {
+      dialog.showModal();
+      const closeOnBackdrop = (event: PointerEvent) => {
+        const rect = dialog.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) setOpen(false);
+      };
+      dialog.addEventListener('pointerdown', closeOnBackdrop);
+      const previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        dialog.removeEventListener('pointerdown', closeOnBackdrop);
+        document.body.style.overflow = previousOverflow;
+        dialog.close();
+      };
+    }
+    dialog.close();
+  }, [open]);
 
   return (
-    <header
-      className={`island-wrap ${scrolled ? 'scrolled' : ''} ${compact ? 'compact' : ''} ${onHome ? 'over-hero' : 'on-page'}`}
-    >
-      <GlassSurface
-        width={
-          compact
-            ? 'min(980px, calc(100vw - 40px))'
-            : 'min(1240px, calc(100vw - 40px))'
-        }
-        height="auto"
-        borderRadius={compact ? 24 : 22}
-        borderWidth={0.08}
-        brightness={scrolled ? 78 : 56}
-        opacity={scrolled ? 0.82 : 0.64}
-        blur={14}
-        displace={0.45}
-        backgroundOpacity={scrolled ? 0.24 : 0.08}
-        saturation={1.45}
-        distortionScale={-135}
-        redOffset={0}
-        greenOffset={7}
-        blueOffset={14}
-        mixBlendMode="screen"
-        className="island-glass"
-      >
-        <div className="island-nav">
-          <SiteLogo inverse={onHome && !scrolled} />
-          <nav className="island-links" aria-label="Main navigation">
+    <>
+      <header className={`cinematic-header ${scrolled ? 'is-scrolled' : ''}`}>
+        <div className="cinematic-header-inner">
+          <nav className="cinematic-links" aria-label="Main navigation">
             {navItems.map(([label, href]) => (
-              <Link
-                key={href}
-                href={href}
-                className={pathname.startsWith(href) ? 'active' : ''}
-                aria-current={pathname.startsWith(href) ? 'page' : undefined}
-              >
+              <Link key={href} href={href} aria-current={pathname.startsWith(href) ? 'page' : undefined}>
                 {label}
               </Link>
             ))}
           </nav>
-          <Link href="/contact" className="island-cta">
-            Start a project <ArrowUpRight size={15} />
+          <Link href="/" className="cinematic-brand" aria-label="Solytes home">
+            <Image src="/solytes-official-wordmark-v3.png" alt="" width={763} height={374} priority />
           </Link>
-          <button
-            className="island-menu"
-            type="button"
-            aria-label={open ? 'Close navigation' : 'Open navigation'}
-            aria-expanded={open}
-            onClick={() => setOpen((value) => !value)}
-          >
-            {open ? <X /> : <Menu />}
-          </button>
+          <div className="cinematic-actions">
+            <Link href="/contact" className="cinematic-enquire">Enquire</Link>
+            <Link href="/products" className="cinematic-cta">Shop Now</Link>
+            <button type="button" className="cinematic-menu-button" aria-label="Open navigation" aria-expanded={open} aria-controls="site-navigation-menu" onClick={() => setOpen(true)}>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                {[5, 12, 19].flatMap((cx) => [5, 12, 19].map((cy) => <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="1.6" />))}
+              </svg>
+            </button>
+          </div>
         </div>
-      </GlassSurface>
-      {open && (
-        <nav className="island-mobile" aria-label="Mobile navigation">
-          {navItems.map(([label, href]) => (
-            <Link
-              key={href}
-              href={href}
-              onClick={() => setOpen(false)}
-              aria-current={pathname.startsWith(href) ? 'page' : undefined}
-            >
-              {label}
-            </Link>
+      </header>
+      <dialog ref={dialogRef} id="site-navigation-menu" className="site-navigation-menu" aria-labelledby="site-menu-title" onCancel={() => setOpen(false)} onClose={() => setOpen(false)}>
+        <div className="site-menu-top">
+          <h2 id="site-menu-title">Menu</h2>
+          <button type="button" aria-label="Close navigation" onClick={() => setOpen(false)}><X size={22} /></button>
+        </div>
+        <Link href="/contact" className="button button-dark site-menu-cta" onClick={() => setOpen(false)}>Plan your solar project <ArrowUpRight size={18} /></Link>
+        <nav aria-label="All navigation">
+          {menuGroups.map((group) => (
+            <div className="site-menu-group" key={group.title}>
+              <h3>{group.title}</h3>
+              {group.links.map(([label, href]) => (
+                <Link key={href} href={href} aria-current={pathname.startsWith(href) ? 'page' : undefined} onClick={() => setOpen(false)}>{label}<ArrowUpRight size={17} /></Link>
+              ))}
+            </div>
           ))}
-          <Link href="/contact" onClick={() => setOpen(false)}>
-            Start a project
-          </Link>
         </nav>
-      )}
-    </header>
+        <a href="mailto:info@solytes.com" className="site-menu-email">info@solytes.com</a>
+      </dialog>
+    </>
   );
 }

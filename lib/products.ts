@@ -19,7 +19,7 @@ export const products: Product[] = [
       'A compact, all-in-one solar luminaire for roads, compounds and shared outdoor spaces.',
     description:
       'Nova combines the lighting engine, battery controls and solar-ready architecture in a self-contained pole-mounted format. Final selection is matched to the road width, mounting height and required operating profile.',
-    image: '/catalog-product-1.jpeg',
+    image: '/product-cutout-1.png',
     applications: [
       'Internal roads',
       'Residential compounds',
@@ -47,7 +47,7 @@ export const products: Product[] = [
       'A three-module solar street light for wider roads and larger open areas.',
     description:
       'TriBeam uses three independent reflector modules to distribute light across demanding outdoor applications. Solytes specifies the system around mounting height, spacing, road geometry and nightly usage.',
-    image: '/catalog-product-2.jpeg',
+    image: '/product-cutout-2.png',
     applications: [
       'Wide internal roads',
       'Industrial yards',
@@ -75,7 +75,7 @@ export const products: Product[] = [
       'A balanced two-module luminaire for streets, campuses and perimeter routes.',
     description:
       'DuoBeam pairs a compact integrated body with two reflector modules for broader outdoor coverage. Mounting and operating profiles are planned around the actual site instead of a one-size-fits-all layout.',
-    image: '/catalog-product-3.jpeg',
+    image: '/product-cutout-3.png',
     applications: [
       'Campus roads',
       'Perimeter routes',
@@ -103,7 +103,7 @@ export const products: Product[] = [
       'A solar wall light with a broad diffuser and integrated motion sensor.',
     description:
       'Shield is designed for entrances, side passages and utility zones where dependable automatic illumination matters. Its self-contained format keeps installation straightforward and wire-free.',
-    image: '/catalog-product-4.jpeg',
+    image: '/product-cutout-4.png',
     applications: [
       'Entrances',
       'Side passages',
@@ -131,7 +131,7 @@ export const products: Product[] = [
       'A contemporary solar garden fixture for paths, lawns and landscape edges.',
     description:
       'Halo delivers comfortable area light from a sculpted, low-profile form. It is suited to residential and hospitality landscapes where fixtures should look considered in daylight as well as after dark.',
-    image: '/catalog-product-5.jpeg',
+    image: '/product-cutout-5.png',
     applications: ['Garden paths', 'Lawns', 'Resort landscapes', 'Courtyards'],
     highlights: [
       'Wide circular light distribution',
@@ -154,7 +154,7 @@ export const products: Product[] = [
       'A luminous solar paver for pathways, edges and distinctive landscape details.',
     description:
       'This branded solar brick creates an unmistakable point of light within landscape and wayfinding schemes. It can be used as a repeated marker or as a focused identity detail at entrances and public spaces.',
-    image: '/catalog-product-6.png',
+    image: '/product-cutout-6.png',
     applications: [
       'Pathway markers',
       'Entrance features',
@@ -182,7 +182,7 @@ export const products: Product[] = [
       'An adjustable solar spotlight for trees, facades and garden features.',
     description:
       'Focus separates the solar panel from the aimable light head so charging and illumination can each be directed where needed. It is a flexible choice for accent lighting without underground cabling.',
-    image: '/catalog-product-7.jpg',
+    image: '/product-cutout-7.png',
     applications: [
       'Trees and planting',
       'Feature walls',
@@ -210,7 +210,7 @@ export const products: Product[] = [
       'A clean, curved wall fixture for entrances, balconies and exterior circulation.',
     description:
       'Arc brings solar charging into a compact architectural housing with a soft downward diffuser. Its restrained finish suits contemporary homes and commercial facades.',
-    image: '/catalog-product-8.png',
+    image: '/product-cutout-8.png',
     applications: [
       'Home entrances',
       'Balconies',

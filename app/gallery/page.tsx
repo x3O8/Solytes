@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const gallery = [
-  ['/solytes-hero-day.png', 'Rooftop solar', 'Residential energy'],
-  ['/product-garden-light.png', 'Garden pathways', 'Landscape lighting'],
-  ['/product-street-light.png', 'Campus roads', 'Infrastructure lighting'],
-  ['/product-brick-light.png', 'Architectural edges', 'Guidance lighting'],
-  ['/solytes-residence.png', 'Integrated rooftops', 'EPC projects'],
-  ['/product-wall-light.png', 'Entrances and walls', 'Security lighting'],
+  ['/solytes-hero-day.png', 'Rooftop solar', 'Residential energy', '/calculator'],
+  ['/product-garden-light.png', 'Garden pathways', 'Landscape lighting', '/products/halo-garden-light'],
+  ['/product-street-light.png', 'Campus roads', 'Infrastructure lighting', '/products/nova-integrated-street-light'],
+  ['/product-brick-light.png', 'Architectural edges', 'Guidance lighting', '/products/solytes-solar-brick-light'],
+  ['/solytes-residence.png', 'Integrated rooftops', 'EPC projects', '/projects'],
+  ['/product-wall-light.png', 'Entrances and walls', 'Security lighting', '/products/shield-motion-wall-light'],
 ];
 
 export default function GalleryPage() {
@@ -30,7 +30,7 @@ export default function GalleryPage() {
         </p>
       </section>
       <section className="shell gallery-grid">
-        {gallery.map(([src, title, category], index) => (
+        {gallery.map(([src, title, category, href], index) => (
           <figure
             key={src}
             className={index === 0 || index === 4 ? 'wide' : ''}
@@ -47,9 +47,12 @@ export default function GalleryPage() {
                 }
               />
             </div>
-            <figcaption>
+            <figcaption className="gallery-caption">
               <span>{category}</span>
               <strong>{title}</strong>
+              <Link href={href} className="arrow-link">
+                Explore {title.toLowerCase()} <ArrowRight size={15} />
+              </Link>
             </figcaption>
           </figure>
         ))}
