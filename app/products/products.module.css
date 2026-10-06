@@ -1,6 +1,6 @@
 .page {
   padding-top: 116px;
-  background: #fff;
+  background: var(--background);
 }
 
 .hero {
@@ -10,7 +10,7 @@
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 28px;
-  background: #edf1e8;
+  background: var(--sky);
 }
 
 .heroCopy {
@@ -34,7 +34,7 @@
 .heroCopy > p {
   max-width: 510px;
   margin: 0;
-  color: #5e7080;
+  color: var(--muted);
   font-size: 16px;
   line-height: 1.75;
 }
@@ -78,7 +78,7 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: #526879;
+  color: var(--muted);
   font-size: 12px;
 }
 

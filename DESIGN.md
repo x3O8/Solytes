@@ -3,16 +3,16 @@ version: alpha
 name: 'Solytes Solar Field Guide'
 description: 'A daylight-led brand system that makes solar lighting and EPC planning feel architectural, practical, and accountable.'
 colors:
-  background: '#faf9f6'
+  background: '#fffcf3'
   surface: '#fff'
-  foreground: '#303a32'
-  muted: '#697166'
-  primary: '#f1d2a3'
-  primary-hover: '#e7bd82'
-  daylight-accent: '#e6b774'
-  sky-accent: '#edf1e8'
-  border: '#dfe3d8'
-  focus-ring: '#9c713f'
+  foreground: '#3e4930'
+  muted: '#727662'
+  primary: '#d6df9d'
+  primary-hover: '#c8d58a'
+  daylight-accent: '#d6df9d'
+  sky-accent: '#edf0e0'
+  border: '#e4e2cf'
+  focus-ring: '#7c8748'
 typography:
   display:
     fontFamily: 'Bodoni Moda, Georgia, serif'
@@ -32,12 +32,12 @@ spacing:
 components:
   header:
     backgroundColor: '#fff'
-    textColor: '#303a32'
+    textColor: '#3e4930'
     rounded: '0px'
     height: '84px, 56px when scrolled'
   button:
-    backgroundColor: '#f1d2a3'
-    textColor: '#3c392d'
+    backgroundColor: '#d6df9d'
+    textColor: '#3e4930'
     rounded: '9px'
     height: '48px'
   product-card:
@@ -57,7 +57,7 @@ components:
 
 ### Creative North Star
 
-The site should feel like a quiet solar atelier: daylight, roof planes, fixture silhouettes, specification notes and disciplined site photography. Warm ivory and pale sage keep the interface light around the photography. Apricot carries primary actions with dark warm text, muted forest supports links, and amber marks badges and focus.
+The site should feel like a quiet solar atelier: daylight, roof planes, fixture silhouettes, specification notes and disciplined site photography. Warm ivory and pale butter keep the interface light around the photography. Fresh olive carries primary actions, links, and badges, with dark leaf ink for readable contrast.
 
 The homepage opens with the full-viewport day/night home scene, introduces Solytes through its Kerala service context, then follows a practical decision path: choose lighting or projects, see the site-first method, plan a rooftop system and begin a conversation. Every route uses aligned editorial planes, real photography and warm neutral space. The final navigation becomes a full-bleed white-sky solar meadow, while its content remains aligned to the shared page grid.
 
@@ -75,7 +75,7 @@ The homepage opens with the full-viewport day/night home scene, introduces Solyt
 
 ## Colors
 
-Light apricot is the primary action color, with dark warm text for contrast. Pale sage supports utility panels, ivory grounds the page, and muted forest defines links and structural text. Amber is reserved for badges and focus. The primary page and section canvas is pure white, giving product photography and dark fixtures room to read clearly. Focus rings remain visible in all surfaces. Forced-colors mode returns control to the system.
+Fresh olive is the primary action color, with dark leaf text for contrast. Pale butter supports navigation and utility panels, warm ivory grounds the page, and olive defines links and badges. The primary page and section canvas is pure white, giving product photography and dark fixtures room to read clearly. Focus rings remain visible in all surfaces. Forced-colors mode returns control to the system.
 
 ## Typography
 
@@ -83,7 +83,7 @@ Bodoni Moda carries display headlines, including the home hero, bringing a consi
 
 ## Layout
 
-The main canvas is capped at 1180px with wide editorial breathing room. Pages alternate between immersive full-bleed imagery and aligned content planes. The full-width white header follows the Superpower reference: links on the left, a centered wordmark, and enquiry, Shop Now and a nine-dot menu on the right. Scrolling turns the header into a centered 56px floating sage pill with a separate circular dot menu. The hero has rounded corners on all sides and an 8px white frame, with its height sized to show the lower corners in the initial viewport. The dot menu opens a native modal side panel with grouped navigation, keyboard focus containment, Escape and backdrop dismissal. On mobile the wordmark sits left and the CTA and menu sit right. On narrow screens, navigation becomes a compact disclosure, product navigation gains explicit horizontal scrolling, and actions remain at least 44px high. Images reserve their geometry, and page-level horizontal overflow is not allowed.
+The main canvas is capped at 1180px with wide editorial breathing room. Pages alternate between immersive full-bleed imagery and aligned content planes. The full-width white header follows the Superpower reference: links on the left, a centered wordmark, and enquiry, Shop Now and a nine-dot menu on the right. Scrolling turns the header into a centered 56px floating pale-butter pill with a separate circular dot menu. The hero has rounded corners on all sides and an 8px white frame, with its height sized to show the lower corners in the initial viewport. The dot menu opens a native modal side panel with grouped navigation, keyboard focus containment, Escape and backdrop dismissal. On mobile the wordmark sits left and the CTA and menu sit right. On narrow screens, navigation becomes a compact disclosure, product navigation gains explicit horizontal scrolling, and actions remain at least 44px high. Images reserve their geometry, and page-level horizontal overflow is not allowed.
 
 ## Elevation & Depth
 
@@ -101,7 +101,7 @@ All enabled controls have visible hover, focus-visible, and pressed states. Focu
 
 ### Buttons and actions
 
-Primary actions use violet-blue on pale surfaces and off-white on dark photographic surfaces. Secondary actions are text links with directional icons. Labels describe the destination or result: “View product,” “Open solar calculator,” and “Prepare enquiry email.” Button dimensions remain stable across interaction states.
+Primary actions use olive with dark leaf text on pale surfaces and off-white on dark photographic surfaces. Secondary actions are text links with directional icons. Labels describe the destination or result: “View product,” “Open solar calculator,” and “Prepare enquiry email.” Button dimensions remain stable across interaction states.
 
 ### Navigation and data display
 
@@ -109,7 +109,7 @@ The shared header is rendered by `components/site-header.tsx`. The homepage trea
 
 ### Forms and overlays
 
-The homepage and contact page share a pale-blue section and white form surface, with navy text and actions, bordered light fields and a restrained warm kicker. The --enquiry-* variables in app/globals.css own this shared palette: ink #1c3556, muted #5f7080, surface #f3f7fa, border #d9e2e9, hover #2b5076. Forms use real labels, native fields, owned focus styling, inline text errors, and `noValidate`. The contact and newsletter actions honestly open the visitor's email application for review rather than implying a completed server submission. Native selects are acceptable because no custom popup geometry is required.
+The homepage and contact page share a pale butter section and white form surface, with olive text and actions, bordered light fields and a restrained olive kicker. The --enquiry-* variables in app/globals.css own this shared palette. Forms use real labels, native fields, owned focus styling, inline text errors, and `noValidate`. The contact and newsletter actions honestly open the visitor's email application for review rather than implying a completed server submission. Native selects are acceptable because no custom popup geometry is required.
 
 ### Iconography
 

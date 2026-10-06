@@ -15,23 +15,23 @@
   --radius-lg: var(--radius);
 }
 :root {
-  --background: #faf9f6;
+  --background: #fffcf3;
   --surface: #fff;
-  --foreground: #303a32;
-  --muted: #697166;
-  --forest: #475a49;
-  --forest-2: #596d54;
-  --lime: #e6b774;
-  --sky: #edf1e8;
-  --stone: #f1f2ec;
-  --primary: #f1d2a3;
-  --primary-hover: #e7bd82;
-  --primary-foreground: #3c392d;
-  --border: #dfe3d8;
-  --ring: #9c713f;
+  --foreground: #3e4930;
+  --muted: #727662;
+  --forest: #59643b;
+  --forest-2: #65713c;
+  --lime: #d6df9d;
+  --sky: #edf0e0;
+  --stone: #f6f4e9;
+  --primary: #d6df9d;
+  --primary-hover: #c8d58a;
+  --primary-foreground: #3e4930;
+  --border: #e4e2cf;
+  --ring: #7c8748;
   --radius: 10px;
-  --badge-ink: #806239;
-  --badge-surface: #f7eddd;
+  --badge-ink: #65713c;
+  --badge-surface: #f7ecc6;
   --font-logo: var(--font-logo-family), 'Arial Narrow', Arial, sans-serif;
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -3049,30 +3049,30 @@ textarea:focus-visible {
 
 /* Solytes rework: a quiet solar atelier, shared by every route. */
 :root {
-  --background: #fff;
+  --background: #fffcf3;
   --surface: #fff;
-  --foreground: #303a32;
-  --muted: #617080;
-  --forest: #475a49;
-  --forest-2: #596d54;
-  --lime: #f4bb56;
-  --sky: #dcecf1;
-  --stone: #e9e4db;
-  --primary: #f1d2a3;
-  --border: #d9d3c8;
-  --ring: #d48924;
+  --foreground: #3e4930;
+  --muted: #727662;
+  --forest: #59643b;
+  --forest-2: #65713c;
+  --lime: #d6df9d;
+  --sky: #edf0e0;
+  --stone: #f6f4e9;
+  --primary: #d6df9d;
+  --border: #e4e2cf;
+  --ring: #7c8748;
   --radius: 16px;
 }
 
 html {
-  scrollbar-color: #49677c #fff;
+  scrollbar-color: #7c8748 #f6f4e9;
 }
 html::-webkit-scrollbar-track {
-  background: #fff;
+  background: #f6f4e9;
 }
 html::-webkit-scrollbar-thumb {
-  border-color: #fff;
-  background: #49677c;
+  border-color: #f6f4e9;
+  background: #7c8748;
 }
 body {
   background: #fff;
@@ -4363,7 +4363,7 @@ h3 {
   align-content: center;
   row-gap: 14px;
   padding: clamp(32px, 3.8vw, 50px);
-  color: #303a32;
+  color: #3e4930;
 }
 .home-product-copy .kicker {
   color: var(--badge-ink);
@@ -5073,7 +5073,7 @@ h3 {
   color: var(--badge-ink);
 }
 .home-services {
-  color: #303a32;
+  color: #3e4930;
   background: #fff;
 }
 .home-services-inner > header > p {
@@ -6051,35 +6051,40 @@ h3 {
   }
 }
 
-/* Canonical site palette: solar ink, slate blue, daylight amber, pale sky. */
+/* Canonical site palette: warm butter, fresh olive, and dark leaf ink. */
 :root {
-  --background: #faf9f6;
+  --background: #fffcf3;
   --surface: #ffffff;
-  --foreground: #303a32;
-  --muted: #697166;
-  --forest: #475a49;
-  --forest-2: #596d54;
-  --lime: #e6b774;
-  --sky: #edf1e8;
-  --stone: #f1f2ec;
-  --border: #dfe3d8;
-  --ring: #9c713f;
-  --enquiry-ink: #475a49;
-  --enquiry-muted: #697166;
-  --enquiry-surface: #edf1e8;
-  --enquiry-border: #dfe3d8;
-  --enquiry-hover: #596d54;
+  --foreground: #3e4930;
+  --muted: #727662;
+  --forest: #59643b;
+  --forest-2: #65713c;
+  --lime: #d6df9d;
+  --sky: #edf0e0;
+  --stone: #f6f4e9;
+  --primary: #d6df9d;
+  --primary-hover: #c8d58a;
+  --primary-foreground: #3e4930;
+  --badge-ink: #65713c;
+  --badge-surface: #f7ecc6;
+  --border: #e4e2cf;
+  --ring: #7c8748;
+  --enquiry-ink: #59643b;
+  --enquiry-muted: #727662;
+  --enquiry-surface: #edf0e0;
+  --enquiry-border: #e4e2cf;
+  --enquiry-hover: #65713c;
 }
 
 html {
-  scrollbar-color: #6f8797 #f1f2ec;
+  scrollbar-color: #7c8748 #f6f4e9;
 }
 html::-webkit-scrollbar-track {
-  background: #f1f2ec;
+  background: #f6f4e9;
 }
 html::-webkit-scrollbar-thumb {
-  border-color: #f1f2ec;
-  background: #6f8797;
+  border-color: #f6f4e9;
+  background: #7c8748;
 }
 
 .kicker,
@@ -6089,7 +6094,7 @@ html::-webkit-scrollbar-thumb {
 }
 .button-light,
 .time-switch button.active {
-  color: #303a32;
+  color: #3e4930;
 }
 .home-services {
   border-top: 0;
@@ -6100,30 +6105,30 @@ html::-webkit-scrollbar-thumb {
 .contact-page,
 .calculator-page,
 .shop-page {
-  background: #faf9f6;
+  background: #fffcf3;
 }
 .home-planning,
 .guidance,
 .newsletter-section,
 .site-footer {
-  background: #475a49;
+  background: #3e4930;
 }
 .footer-field-card .footer-columns,
 .footer-field-card .footer-columns > div,
 .footer-field-card .footer-columns > nav {
-  color: #475a49;
+  color: #59643b;
 }
 .footer-field-card .footer-columns > div > span,
 .footer-field-card .footer-columns > nav > span,
 .footer-socials a {
-  color: #303a32;
+  color: #3e4930;
 }
 .footer-field-card .footer-columns a:hover,
 .footer-socials a:hover {
-  color: #596d54;
+  color: #65713c;
 }
 .footer-socials a:hover {
-  background: #edf1e8;
+  background: #edf0e0;
 }
 
 /* Homepage annotation overrides (keep after the canonical palette). */
@@ -6209,7 +6214,7 @@ textarea { caret-color: var(--primary); }
   color: var(--forest);
 }
 
-/* Daylight palette: warm ivory, soft sage, and apricot actions. */
+/* Butter and olive palette: warm ivory, pale butter, and fresh olive actions. */
 html { scrollbar-gutter: stable; }
 .cinematic-header {
   position: fixed;
@@ -6219,7 +6224,7 @@ html { scrollbar-gutter: stable; }
   width: 100%;
   transform: translateX(-50%);
   min-height: 84px;
-  background: var(--surface);
+  background: var(--badge-surface);
   color: var(--foreground);
   transition: width 300ms var(--ease-out-quart), top 300ms var(--ease-out-quart), background 220ms ease;
 }
@@ -6251,7 +6256,7 @@ html { scrollbar-gutter: stable; }
   z-index: -1;
   inset: 0 66px 0 0;
   border-radius: 999px;
-  background: rgb(237 241 232 / 97%);
+  background: rgb(247 236 198 / 97%);
   box-shadow: 0 5px 24px rgb(48 58 50 / 9%);
   backdrop-filter: blur(16px);
   content: '';
