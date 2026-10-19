@@ -1,7 +1,7 @@
 'use client';
 
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
+import Image from '@/components/optimized-image';
 import { type SyntheticEvent, useRef, useState } from 'react';
 import GlassSurface from './GlassSurface';
 

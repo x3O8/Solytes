@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from '@/components/optimized-image';
+import Link from '@/components/site-link';
 import { usePathname } from 'next/navigation';
 import { ArrowUpRight, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
@@ -71,7 +71,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <Link href="/" className="cinematic-brand" aria-label="Solytes home">
-            <Image src="/solytes-official-wordmark-v3.png" alt="" width={763} height={374} priority />
+            <Image src="/solytes-official-wordmark-v3.png" alt="" width={763} height={374} sizes="180px" priority />
           </Link>
           <div className="cinematic-actions">
             <Link href="/contact" className="cinematic-enquire">Enquire</Link>

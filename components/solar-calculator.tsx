@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import { useSearchParams } from 'next/navigation';
 import { ArrowRight, Info, SunMedium } from 'lucide-react';
 import { useMemo, useState } from 'react';

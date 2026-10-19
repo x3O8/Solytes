@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from '@/components/site-link';
+import Image from '@/components/optimized-image';
 
 export function SiteLogo({
   inverse = false,
@@ -23,7 +23,7 @@ export function SiteLogo({
         alt=""
         width={763}
         height={327}
-        priority
+        sizes="180px"
       />
     </Link>
   );

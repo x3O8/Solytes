@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from '@/components/optimized-image';
+import Link from '@/components/site-link';
 import { ArrowLeft, ArrowRight, Check, PackageCheck } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import { getProduct, products } from '@/lib/products';

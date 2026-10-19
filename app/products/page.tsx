@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from '@/components/optimized-image';
+import Link from '@/components/site-link';
 import { ArrowRight, Check, MoveDown } from 'lucide-react';
 import { ProductCatalog } from '@/components/product-catalog';
 import { products } from '@/lib/products';

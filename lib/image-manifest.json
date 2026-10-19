@@ -1,0 +1,1602 @@
+{
+  "/catalog-product-1.jpeg": {
+    "width": 700,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-1-24e0a7abbe55-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-1-24e0a7abbe55-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-1-24e0a7abbe55-700.webp",
+        "width": 700
+      }
+    ]
+  },
+  "/catalog-product-2.jpeg": {
+    "width": 700,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-2-c67717952abb-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-2-c67717952abb-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-2-c67717952abb-700.webp",
+        "width": 700
+      }
+    ]
+  },
+  "/catalog-product-3.jpeg": {
+    "width": 700,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-3-09d90da4e102-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-3-09d90da4e102-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-3-09d90da4e102-700.webp",
+        "width": 700
+      }
+    ]
+  },
+  "/catalog-product-4.jpeg": {
+    "width": 700,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-4-ca934aa41b66-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-4-ca934aa41b66-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-4-ca934aa41b66-700.webp",
+        "width": 700
+      }
+    ]
+  },
+  "/catalog-product-5.jpeg": {
+    "width": 700,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-5-f52735d894f8-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-5-f52735d894f8-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-5-f52735d894f8-700.webp",
+        "width": 700
+      }
+    ]
+  },
+  "/catalog-product-6.png": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-6-da2c689258fd-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-6-da2c689258fd-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-6-da2c689258fd-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/catalog-product-6-da2c689258fd-1024.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "/catalog-product-7.jpg": {
+    "width": 700,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-7-06f397bc6669-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-7-06f397bc6669-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-7-06f397bc6669-700.webp",
+        "width": 700
+      }
+    ]
+  },
+  "/catalog-product-8.png": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/catalog-product-8-9e3dbb15273c-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/catalog-product-8-9e3dbb15273c-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/catalog-product-8-9e3dbb15273c-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/catalog-product-8-9e3dbb15273c-1024.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "/favicon.png": {
+    "width": 128,
+    "height": 128,
+    "variants": [
+      {
+        "src": "/optimized/favicon-dd2910d900cc-128.webp",
+        "width": 128
+      }
+    ]
+  },
+  "/home-process-deliver.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/home-process-deliver-d08ccd55fe5e-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-process-deliver-d08ccd55fe5e-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-process-deliver-d08ccd55fe5e-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-process-deliver-d08ccd55fe5e-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-process-deliver-d08ccd55fe5e-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/home-process-plan-system.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/home-process-plan-system-154f2a10ff9b-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-process-plan-system-154f2a10ff9b-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-process-plan-system-154f2a10ff9b-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-process-plan-system-154f2a10ff9b-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-process-plan-system-154f2a10ff9b-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/home-process-read-site.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/home-process-read-site-c5ca71376657-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-process-read-site-c5ca71376657-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-process-read-site-c5ca71376657-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-process-read-site-c5ca71376657-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-process-read-site-c5ca71376657-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/home-product-arc.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-arc-3d4f70dd529f-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-arc-3d4f70dd529f-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-arc-3d4f70dd529f-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-arc-3d4f70dd529f-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-arc-3d4f70dd529f-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-brick.png": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "src": "/optimized/home-product-brick-e35c7a0fd0bb-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-brick-e35c7a0fd0bb-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-brick-e35c7a0fd0bb-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-brick-e35c7a0fd0bb-1254.webp",
+        "width": 1254
+      }
+    ]
+  },
+  "/home-product-focus-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-focus-v2-d09e5da7f4f9-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-focus-v2-d09e5da7f4f9-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-focus-v2-d09e5da7f4f9-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-focus-v2-d09e5da7f4f9-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-focus-v2-d09e5da7f4f9-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-focus-v3.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-focus-v3-080c8c368a3d-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-focus-v3-080c8c368a3d-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-focus-v3-080c8c368a3d-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-focus-v3-080c8c368a3d-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-focus-v3-080c8c368a3d-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-focus.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-focus-c2e92f2f0008-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-focus-c2e92f2f0008-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-focus-c2e92f2f0008-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-focus-c2e92f2f0008-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-focus-c2e92f2f0008-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-halo.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-halo-5d799df0961c-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-halo-5d799df0961c-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-halo-5d799df0961c-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-halo-5d799df0961c-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-halo-5d799df0961c-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-nova-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-nova-v2-5aef0ab13d5e-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-nova-v2-5aef0ab13d5e-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-nova-v2-5aef0ab13d5e-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-nova-v2-5aef0ab13d5e-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-nova-v2-5aef0ab13d5e-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-nova.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-nova-8c74d5591bba-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-nova-8c74d5591bba-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-nova-8c74d5591bba-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-nova-8c74d5591bba-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-nova-8c74d5591bba-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/home-product-shield.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/home-product-shield-78dd80176bd6-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/home-product-shield-78dd80176bd6-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/home-product-shield-78dd80176bd6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/home-product-shield-78dd80176bd6-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/home-product-shield-78dd80176bd6-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/kerala-map-reference.png": {
+    "width": 607,
+    "height": 591,
+    "variants": [
+      {
+        "src": "/optimized/kerala-map-reference-aa3794fb3655-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/kerala-map-reference-aa3794fb3655-607.webp",
+        "width": 607
+      }
+    ]
+  },
+  "/product-brick-light.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/product-brick-light-a5d724b2e24d-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-brick-light-a5d724b2e24d-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-brick-light-a5d724b2e24d-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-brick-light-a5d724b2e24d-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-brick-light-a5d724b2e24d-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/product-cutout-1.png": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-1-770cb5666ded-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-1-770cb5666ded-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-1-770cb5666ded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-1-770cb5666ded-1254.webp",
+        "width": 1254
+      }
+    ]
+  },
+  "/product-cutout-2.png": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-2-add813b839f6-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-2-add813b839f6-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-2-add813b839f6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-2-add813b839f6-1024.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "/product-cutout-3.png": {
+    "width": 1240,
+    "height": 1269,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-3-f8017bc022e6-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-3-f8017bc022e6-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-3-f8017bc022e6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-3-f8017bc022e6-1240.webp",
+        "width": 1240
+      }
+    ]
+  },
+  "/product-cutout-4.png": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-4-3188acd78e04-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-4-3188acd78e04-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-4-3188acd78e04-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-4-3188acd78e04-1254.webp",
+        "width": 1254
+      }
+    ]
+  },
+  "/product-cutout-5.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-5-63bdb86f7cd3-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-5-63bdb86f7cd3-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-5-63bdb86f7cd3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-5-63bdb86f7cd3-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-cutout-5-63bdb86f7cd3-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/product-cutout-6.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-6-e3466d00e395-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-6-e3466d00e395-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-6-e3466d00e395-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-6-e3466d00e395-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-cutout-6-e3466d00e395-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/product-cutout-7.png": {
+    "width": 1226,
+    "height": 1283,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-7-487280cc2f0f-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-7-487280cc2f0f-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-7-487280cc2f0f-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-7-487280cc2f0f-1226.webp",
+        "width": 1226
+      }
+    ]
+  },
+  "/product-cutout-8.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/product-cutout-8-9e3508ec4564-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-cutout-8-9e3508ec4564-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-cutout-8-9e3508ec4564-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-cutout-8-9e3508ec4564-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-cutout-8-9e3508ec4564-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/product-garden-light.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/product-garden-light-fd089f5b9f46-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-garden-light-fd089f5b9f46-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-garden-light-fd089f5b9f46-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-garden-light-fd089f5b9f46-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-garden-light-fd089f5b9f46-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/product-street-light.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/product-street-light-4fed80c01c04-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-street-light-4fed80c01c04-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-street-light-4fed80c01c04-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-street-light-4fed80c01c04-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-street-light-4fed80c01c04-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/product-wall-light.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/product-wall-light-c2ca16a00970-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/product-wall-light-c2ca16a00970-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/product-wall-light-c2ca16a00970-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/product-wall-light-c2ca16a00970-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/product-wall-light-c2ca16a00970-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/solar-landscape-continuum.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solar-landscape-continuum-23eb6bbf9cac-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-landscape-continuum-23eb6bbf9cac-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solar-landscape-continuum-23eb6bbf9cac-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solar-landscape-continuum-23eb6bbf9cac-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solar-landscape-continuum-23eb6bbf9cac-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/solar-meadow-newsletter.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solar-meadow-newsletter-b36002780af6-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-meadow-newsletter-b36002780af6-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solar-meadow-newsletter-b36002780af6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solar-meadow-newsletter-b36002780af6-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solar-meadow-newsletter-b36002780af6-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solar-sky-scroll-background-v2.png": {
+    "width": 941,
+    "height": 1672,
+    "variants": [
+      {
+        "src": "/optimized/solar-sky-scroll-background-v2-179322c330cb-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-sky-scroll-background-v2-179322c330cb-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solar-sky-scroll-background-v2-179322c330cb-941.webp",
+        "width": 941
+      }
+    ]
+  },
+  "/solar-sky-scroll-background.png": {
+    "width": 941,
+    "height": 1672,
+    "variants": [
+      {
+        "src": "/optimized/solar-sky-scroll-background-16192d3ebbc0-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-sky-scroll-background-16192d3ebbc0-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solar-sky-scroll-background-16192d3ebbc0-941.webp",
+        "width": 941
+      }
+    ]
+  },
+  "/solytes-clean-home-day.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-clean-home-day-6002f8607e73-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-clean-home-day-6002f8607e73-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-clean-home-day-6002f8607e73-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-clean-home-day-6002f8607e73-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-clean-home-day-6002f8607e73-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-clean-home-night.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-clean-home-night-c9359f0eb892-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-clean-home-night-c9359f0eb892-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-clean-home-night-c9359f0eb892-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-clean-home-night-c9359f0eb892-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-clean-home-night-c9359f0eb892-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-community-dawn.png": {
+    "width": 1829,
+    "height": 860,
+    "variants": [
+      {
+        "src": "/optimized/solytes-community-dawn-f836a3ec081c-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-community-dawn-f836a3ec081c-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-community-dawn-f836a3ec081c-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-community-dawn-f836a3ec081c-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-community-dawn-f836a3ec081c-1829.webp",
+        "width": 1829
+      }
+    ]
+  },
+  "/solytes-community-meadow.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-community-meadow-6f67b8c428e9-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-community-meadow-6f67b8c428e9-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-community-meadow-6f67b8c428e9-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-community-meadow-6f67b8c428e9-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-community-meadow-6f67b8c428e9-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-contact-forest-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solytes-contact-forest-v2-5df59a4c5aab-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-contact-forest-v2-5df59a4c5aab-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-contact-forest-v2-5df59a4c5aab-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-contact-forest-v2-5df59a4c5aab-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-contact-forest-v2-5df59a4c5aab-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/solytes-faq-architecture-v2.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/optimized/solytes-faq-architecture-v2-cbe7a4fce5a1-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-faq-architecture-v2-cbe7a4fce5a1-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-faq-architecture-v2-cbe7a4fce5a1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-faq-architecture-v2-cbe7a4fce5a1-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-faq-architecture-v2-cbe7a4fce5a1-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/solytes-field-home-day-v3.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-field-home-day-v3-3aa911c6b734-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-field-home-day-v3-3aa911c6b734-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-field-home-day-v3-3aa911c6b734-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-field-home-day-v3-3aa911c6b734-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-field-home-day-v3-3aa911c6b734-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-field-home-night-v3.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-field-home-night-v3-9f73f0b51403-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-field-home-night-v3-9f73f0b51403-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-field-home-night-v3-9f73f0b51403-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-field-home-night-v3-9f73f0b51403-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-field-home-night-v3-9f73f0b51403-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-footer-landscape-real.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-footer-landscape-real-8fa932f532b2-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-footer-landscape-real-8fa932f532b2-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-footer-landscape-real-8fa932f532b2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-footer-landscape-real-8fa932f532b2-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-footer-landscape-real-8fa932f532b2-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-footer-solar-field-user.png": {
+    "width": 1701,
+    "height": 924,
+    "variants": [
+      {
+        "src": "/optimized/solytes-footer-solar-field-user-909acd70c34b-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-user-909acd70c34b-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-user-909acd70c34b-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-user-909acd70c34b-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-user-909acd70c34b-1701.webp",
+        "width": 1701
+      }
+    ]
+  },
+  "/solytes-footer-solar-field-vibrant.png": {
+    "width": 1701,
+    "height": 924,
+    "variants": [
+      {
+        "src": "/optimized/solytes-footer-solar-field-vibrant-3b4d8fed9620-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-vibrant-3b4d8fed9620-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-vibrant-3b4d8fed9620-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-vibrant-3b4d8fed9620-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-vibrant-3b4d8fed9620-1701.webp",
+        "width": 1701
+      }
+    ]
+  },
+  "/solytes-footer-solar-field.png": {
+    "width": 1701,
+    "height": 924,
+    "variants": [
+      {
+        "src": "/optimized/solytes-footer-solar-field-285377003efc-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-285377003efc-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-285377003efc-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-285377003efc-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-footer-solar-field-285377003efc-1701.webp",
+        "width": 1701
+      }
+    ]
+  },
+  "/solytes-hero-day.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-hero-day-56d130c8ae45-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-hero-day-56d130c8ae45-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-hero-day-56d130c8ae45-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-hero-day-56d130c8ae45-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-hero-day-56d130c8ae45-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-hero-night.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-hero-night-da953797ed91-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-hero-night-da953797ed91-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-hero-night-da953797ed91-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-hero-night-da953797ed91-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-hero-night-da953797ed91-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-hero-solar-house-day-v2.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-hero-solar-house-day-v2-799a34d4d65f-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-day-v2-799a34d4d65f-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-day-v2-799a34d4d65f-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-day-v2-799a34d4d65f-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-day-v2-799a34d4d65f-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-hero-solar-house-night-v2.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-hero-solar-house-night-v2-92eac03b8162-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-night-v2-92eac03b8162-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-night-v2-92eac03b8162-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-night-v2-92eac03b8162-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-hero-solar-house-night-v2-92eac03b8162-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-hero.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-hero-da953797ed91-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-hero-da953797ed91-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-hero-da953797ed91-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-hero-da953797ed91-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-hero-da953797ed91-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-kerala-dotted-cities-accurate-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-v2-72e915eb1bd4-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-v2-72e915eb1bd4-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-v2-72e915eb1bd4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-v2-72e915eb1bd4-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-v2-72e915eb1bd4-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/solytes-kerala-dotted-cities-accurate.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-6898b1430ea3-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-6898b1430ea3-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-6898b1430ea3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-6898b1430ea3-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-accurate-6898b1430ea3-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/solytes-kerala-dotted-cities.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-727fbcc698c9-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-727fbcc698c9-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-727fbcc698c9-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-727fbcc698c9-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-kerala-dotted-cities-727fbcc698c9-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/solytes-logo-sunrise.png": {
+    "width": 747,
+    "height": 364,
+    "variants": [
+      {
+        "src": "/optimized/solytes-logo-sunrise-80c22f330e35-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-logo-sunrise-80c22f330e35-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-logo-sunrise-80c22f330e35-747.webp",
+        "width": 747
+      }
+    ]
+  },
+  "/solytes-logo-wordmark.png": {
+    "width": 747,
+    "height": 152,
+    "variants": [
+      {
+        "src": "/optimized/solytes-logo-wordmark-eee87e128e4f-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-logo-wordmark-eee87e128e4f-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-logo-wordmark-eee87e128e4f-747.webp",
+        "width": 747
+      }
+    ]
+  },
+  "/solytes-modern-home-day.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-modern-home-day-2ca8471bf2e7-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-modern-home-day-2ca8471bf2e7-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-modern-home-day-2ca8471bf2e7-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-modern-home-day-2ca8471bf2e7-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-modern-home-day-2ca8471bf2e7-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-modern-home-night.png": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/solytes-modern-home-night-6d04f99febff-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-modern-home-night-6d04f99febff-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-modern-home-night-6d04f99febff-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-modern-home-night-6d04f99febff-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-modern-home-night-6d04f99febff-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/solytes-official-wordmark-v2.png": {
+    "width": 1870,
+    "height": 390,
+    "variants": [
+      {
+        "src": "/optimized/solytes-official-wordmark-v2-63e75fa9c51b-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-official-wordmark-v2-63e75fa9c51b-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-official-wordmark-v2-63e75fa9c51b-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-official-wordmark-v2-63e75fa9c51b-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-official-wordmark-v2-63e75fa9c51b-1870.webp",
+        "width": 1870
+      }
+    ]
+  },
+  "/solytes-official-wordmark-v3.png": {
+    "width": 763,
+    "height": 327,
+    "variants": [
+      {
+        "src": "/optimized/solytes-official-wordmark-v3-e766830e4d0a-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-official-wordmark-v3-e766830e4d0a-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-official-wordmark-v3-e766830e4d0a-763.webp",
+        "width": 763
+      }
+    ]
+  },
+  "/solytes-residence.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solytes-residence-325e10f38eaf-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-residence-325e10f38eaf-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-residence-325e10f38eaf-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-residence-325e10f38eaf-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-residence-325e10f38eaf-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/solytes-section-sky-enhanced.jpg": {
+    "width": 2427,
+    "height": 5832,
+    "variants": [
+      {
+        "src": "/optimized/solytes-section-sky-enhanced-eb2c005f0382-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-section-sky-enhanced-eb2c005f0382-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-section-sky-enhanced-eb2c005f0382-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/optimized/solytes-section-sky-enhanced-eb2c005f0382-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/optimized/solytes-section-sky-enhanced-eb2c005f0382-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/solytes-section-sky.png": {
+    "width": 724,
+    "height": 2172,
+    "variants": [
+      {
+        "src": "/optimized/solytes-section-sky-11185bae4591-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-section-sky-11185bae4591-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/optimized/solytes-section-sky-11185bae4591-724.webp",
+        "width": 724
+      }
+    ]
+  },
+  "/solytes-y-favicon-v2.png": {
+    "width": 520,
+    "height": 520,
+    "variants": [
+      {
+        "src": "/optimized/solytes-y-favicon-v2-85ff374ee2b3-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solytes-y-favicon-v2-85ff374ee2b3-520.webp",
+        "width": 520
+      }
+    ]
+  }
+}

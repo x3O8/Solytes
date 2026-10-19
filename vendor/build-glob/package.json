@@ -1,0 +1,11 @@
+{
+  "name": "@solytes/build-glob",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bounded tinyglobby adapter for vite-plugin-dynamic-import's sync call",
+  "type": "module",
+  "main": "index.mjs",
+  "dependencies": {
+    "tinyglobby": "0.2.17"
+  }
+}

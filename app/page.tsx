@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from '@/components/optimized-image';
+import Link from '@/components/site-link';
 import {
   ArrowRight,
   Calculator,
@@ -10,7 +10,7 @@ import {
   ChevronRight,
   Clock3,
   Mail,
-  MapPin,
+  Phone,
   Moon,
   SunMedium,
 } from 'lucide-react';
@@ -103,20 +103,39 @@ const frequentlyAskedQuestions = [
 
 export default function Home() {
   const [isNight, setIsNight] = useState(false);
+  const [nightRequested, setNightRequested] = useState(false);
+  const [nightReady, setNightReady] = useState(false);
   const [activeProduct, setActiveProduct] = useState(0);
   const [monthlyUnits, setMonthlyUnits] = useState(450);
   const touchStartX = useRef<number | null>(null);
+  const carouselRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return;
     }
 
-    const timer = window.setInterval(() => {
-      setActiveProduct((current) => (current + 1) % featuredProducts.length);
-    }, 5500);
-
-    return () => window.clearInterval(timer);
+    let visible = false;
+    let timer: number | undefined;
+    const update = () => {
+      window.clearInterval(timer);
+      if (!visible || document.hidden) return;
+      timer = window.setInterval(() => {
+        if (carouselRef.current?.contains(document.activeElement) || carouselRef.current?.matches(':hover')) return;
+        setActiveProduct((current) => (current + 1) % featuredProducts.length);
+      }, 5500);
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      update();
+    });
+    if (carouselRef.current) observer.observe(carouselRef.current);
+    document.addEventListener('visibilitychange', update);
+    return () => {
+      window.clearInterval(timer);
+      observer.disconnect();
+      document.removeEventListener('visibilitychange', update);
+    };
   }, []);
 
   const product = featuredProducts[activeProduct];
@@ -131,7 +150,7 @@ export default function Home() {
 
   return (
     <main className="home-page">
-      <section className={`hero ${isNight ? 'is-night' : 'is-day'}`}>
+      <section className={`hero ${isNight && nightReady ? 'is-night' : 'is-day'}`}>
         <Image
           src="/solytes-field-home-day-v3.png"
           alt="Clean contemporary solar-powered home in daylight"
@@ -140,14 +159,15 @@ export default function Home() {
           className="hero-image hero-image-day"
           sizes="100vw"
         />
-        <Image
+        {nightRequested && <Image
           src="/solytes-field-home-night-v3.png"
           alt="The same solar-powered home illuminated at night"
           fill
-          priority
+          loading="eager"
+          onLoad={() => setNightReady(true)}
           className="hero-image hero-image-night"
           sizes="100vw"
-        />
+        />}
         <div className="hero-shade" />
         <div className="hero-content shell">
           <h1>Power Your Future with Smarter Solar</h1>
@@ -174,7 +194,7 @@ export default function Home() {
             type="button"
             className={isNight ? 'active' : ''}
             aria-pressed={isNight}
-            onClick={() => setIsNight(true)}
+            onClick={() => { setNightRequested(true); setIsNight(true); }}
           >
             <Moon size={15} />
             <span>
@@ -231,8 +251,8 @@ export default function Home() {
             <Link href="/calculator" className="home-service-card">
               <div className="home-service-image">
                 <Image
-                  src="/solytes-modern-home-day.png"
-                  alt="A contemporary home with a rooftop solar system"
+                  src="/solytes-clean-home-day.png"
+                  alt="A modern home with rooftop solar panels in daylight"
                   fill
                   sizes="(max-width: 780px) 100vw, 33vw"
                 />
@@ -269,8 +289,8 @@ export default function Home() {
             <Link href="/products" className="home-service-card">
               <div className="home-service-image">
                 <Image
-                  src="/home-product-halo.png"
-                  alt="Solar garden lighting along a landscaped path"
+                  src="/product-street-light.png"
+                  alt="Solar street lights illuminating a landscaped road at night"
                   fill
                   sizes="(max-width: 780px) 100vw, 33vw"
                 />
@@ -292,6 +312,7 @@ export default function Home() {
 
       <section
         className="home-products shell"
+        ref={carouselRef}
         aria-labelledby="home-products-title"
       >
         <header className="home-products-heading">
@@ -334,7 +355,7 @@ export default function Home() {
             <h2>{product.name}</h2>
             <p>{product.description}</p>
             <Link href={product.href} className="button button-dark">
-              View Products <ArrowRight size={17} />
+              View Products
             </Link>
           </div>
           <div className="home-product-controls" aria-label="Carousel controls">
@@ -481,17 +502,17 @@ export default function Home() {
               </span>
             </div>
             <div>
+              <Phone />
+              <span>
+                <small>Call us</small>
+                <a href="tel:+917561028248">+91 7561028248</a>
+              </span>
+            </div>
+            <div>
               <Clock3 />
               <span>
                 <small>Response window</small>
                 <strong>Within one working day</strong>
-              </span>
-            </div>
-            <div>
-              <MapPin />
-              <span>
-                <small>Project coverage</small>
-                <strong>Across Kerala</strong>
               </span>
             </div>
           </div>

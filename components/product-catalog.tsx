@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import Image from '@/components/optimized-image';
+import Link from '@/components/site-link';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { ArrowRight, Search, SlidersHorizontal, X } from 'lucide-react';
-import { useMemo, useRef } from 'react';
+import { useMemo, useRef, useState, useEffect } from 'react';
 import type { Product } from '@/lib/products';
 import styles from './product-catalog.module.css';
 
@@ -40,12 +40,24 @@ function getCollection(product: Product): Collection {
 
 export function ProductCatalog({ products }: { products: Product[] }) {
   const pathname = usePathname();
-  const router = useRouter();
   const searchParams = useSearchParams();
+  const searchString = searchParams.toString();
+  const [localParams, setLocalParams] = useState(searchString);
+  const paramsRef = useRef(localParams);
+  useEffect(() => {
+    const sync = () => {
+      paramsRef.current = window.location.search.slice(1);
+      setLocalParams(paramsRef.current);
+    };
+    sync();
+    window.addEventListener('popstate', sync);
+    return () => window.removeEventListener('popstate', sync);
+  }, [searchString]);
+  const filters = new URLSearchParams(localParams);
   const searchRef = useRef<HTMLInputElement>(null);
-  const query = searchParams.get('q') ?? '';
-  const collectionParam = searchParams.get('collection');
-  const sortParam = searchParams.get('sort');
+  const query = filters.get('q') ?? '';
+  const collectionParam = filters.get('collection');
+  const sortParam = filters.get('sort');
   const collection: Collection = collections.includes(
     collectionParam as Collection,
   )
@@ -83,18 +95,22 @@ export function ProductCatalog({ products }: { products: Product[] }) {
   }, [collection, products, query, sort]);
 
   function updateParams(changes: Record<string, string | null>) {
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams(paramsRef.current);
     for (const [key, value] of Object.entries(changes)) {
       if (value) params.set(key, value);
       else params.delete(key);
     }
-    router.replace(params.size ? `${pathname}?${params}` : pathname, {
-      scroll: false,
-    });
+    paramsRef.current = params.toString();
+    setLocalParams(paramsRef.current);
+    window.history.replaceState(
+      null,
+      '',
+      params.size ? `${pathname}?${params}` : pathname,
+    );
   }
 
   function clearAll() {
-    router.replace(pathname, { scroll: false });
+    updateParams({ q: null, collection: null, sort: null });
     requestAnimationFrame(() => searchRef.current?.focus());
   }
 

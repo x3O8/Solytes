@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from '@/components/optimized-image';
+import Link from '@/components/site-link';
 import { Camera, Mail, Phone } from 'lucide-react';
 import { SiteLogo } from './site-logo';
 
