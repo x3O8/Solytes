@@ -6453,6 +6453,91 @@ input, textarea { caret-color: var(--forest); }
 }
 .home-contact .home-contact-copy h2 { color: #000; }
 
+/* A quiet paper grain ties the contrasting page sections together. */
+body::after {
+  position: fixed;
+  z-index: 120;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.22'/%3E%3C/svg%3E");
+}
+
+/* Keep the home page rhythm compact and make the services feel like one system. */
+.home-kerala-inner {
+  padding-block: clamp(38px, 4.5vw, 60px);
+}
+.home-products {
+  padding-top: clamp(12px, 2vw, 24px);
+  padding-bottom: clamp(34px, 4vw, 52px);
+}
+.home-services {
+  border: 0;
+  background: var(--sky);
+}
+.home-services-inner {
+  padding-block: clamp(42px, 5vw, 68px);
+}
+.home-services-inner > header {
+  align-items: end;
+  gap: 20px 48px;
+  margin-bottom: 30px;
+}
+.home-services-inner > header h2 {
+  max-width: 12ch;
+  font-size: clamp(38px, 4.6vw, 62px);
+}
+.home-services-inner > header > p {
+  max-width: 420px;
+  font-size: 14px;
+}
+.home-service-grid { gap: 18px; }
+.home-service-card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgb(48 58 50 / 4%);
+}
+.home-service-card:hover {
+  box-shadow: 0 16px 36px rgb(48 58 50 / 9%);
+}
+.home-service-image { aspect-ratio: 1.48; }
+.home-service-copy {
+  min-height: 184px;
+  padding: 22px 58px 26px 22px;
+}
+.home-service-copy > span {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: var(--badge-surface);
+  color: var(--badge-ink);
+  font-size: 9px;
+  letter-spacing: 0.075em;
+}
+.home-service-copy h3 {
+  padding-top: 12px;
+  font-size: 21px;
+}
+.home-service-copy p { font-size: 13px; }
+.home-service-copy i {
+  right: 18px;
+  bottom: 20px;
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+@media (max-width: 780px) {
+  .home-kerala-inner { padding-block: 34px; }
+  .home-products { padding-top: 8px; }
+  .home-services-inner { padding-block: 42px; }
+  .home-services-inner > header { margin-bottom: 24px; }
+}
+
 /* Shared route feedback keeps the header available and follows router pending state. */
 .page-loading {
   min-height: 65svh;

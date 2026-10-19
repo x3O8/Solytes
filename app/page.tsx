@@ -234,83 +234,6 @@ export default function Home() {
       </section>
 
       <section
-        id="services"
-        className="home-services"
-        aria-labelledby="home-services-title"
-      >
-        <div className="shell home-services-inner">
-          <header>
-            <span className="kicker">Services Offered</span>
-            <h2 id="home-services-title">Built around real places.</h2>
-            <p>
-              From rooftops that need more independence to pathways that need a
-              softer glow, we design for the space, the people and the outcome.
-            </p>
-          </header>
-          <div className="home-service-grid">
-            <Link href="/calculator" className="home-service-card">
-              <div className="home-service-image">
-                <Image
-                  src="/solytes-clean-home-day.png"
-                  alt="A modern home with rooftop solar panels in daylight"
-                  fill
-                  sizes="(max-width: 780px) 100vw, 33vw"
-                />
-              </div>
-              <div className="home-service-copy">
-                <span>Homes and businesses</span>
-                <h3>Rooftop solar</h3>
-                <p>
-                  System sizing and rooftop planning based on real energy use.
-                </p>
-                <i aria-hidden="true">
-                  <ArrowRight size={17} />
-                </i>
-              </div>
-            </Link>
-            <Link href="/projects" className="home-service-card">
-              <div className="home-service-image">
-                <Image
-                  src="/home-process-deliver.png"
-                  alt="Solar installers completing a rooftop energy project"
-                  fill
-                  sizes="(max-width: 780px) 100vw, 33vw"
-                />
-              </div>
-              <div className="home-service-copy">
-                <span>End-to-end execution</span>
-                <h3>EPC project delivery</h3>
-                <p>Engineering-led planning, procurement and installation.</p>
-                <i aria-hidden="true">
-                  <ArrowRight size={17} />
-                </i>
-              </div>
-            </Link>
-            <Link href="/products" className="home-service-card">
-              <div className="home-service-image">
-                <Image
-                  src="/product-street-light.png"
-                  alt="Solar street lights illuminating a landscaped road at night"
-                  fill
-                  sizes="(max-width: 780px) 100vw, 33vw"
-                />
-              </div>
-              <div className="home-service-copy">
-                <span>Outdoor applications</span>
-                <h3>Solar lighting</h3>
-                <p>
-                  Street, garden, wall and landscape lighting without cabling.
-                </p>
-                <i aria-hidden="true">
-                  <ArrowRight size={17} />
-                </i>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section
         className="home-products shell"
         ref={carouselRef}
         aria-labelledby="home-products-title"
@@ -388,6 +311,83 @@ export default function Home() {
           </div>
         </article>
       </section>
+      <section
+        id="services"
+        className="home-services"
+        aria-labelledby="home-services-title"
+      >
+        <div className="shell home-services-inner">
+          <header>
+            <span className="kicker">Services Offered</span>
+            <h2 id="home-services-title">Built around real places.</h2>
+            <p>
+              From rooftops that need more independence to pathways that need a
+              softer glow, we design for the space, the people and the outcome.
+            </p>
+          </header>
+          <div className="home-service-grid">
+            <Link href="/calculator" className="home-service-card">
+              <div className="home-service-image">
+                <Image
+                  src="/solytes-clean-home-day.png"
+                  alt="A modern home with rooftop solar panels in daylight"
+                  fill
+                  sizes="(max-width: 780px) 100vw, 33vw"
+                />
+              </div>
+              <div className="home-service-copy">
+                <span>Homes and businesses</span>
+                <h3>Rooftop solar</h3>
+                <p>
+                  System sizing and rooftop planning based on real energy use.
+                </p>
+                <i aria-hidden="true">
+                  <ArrowRight size={17} />
+                </i>
+              </div>
+            </Link>
+            <Link href="/projects" className="home-service-card">
+              <div className="home-service-image">
+                <Image
+                  src="/home-process-deliver.png"
+                  alt="Solar installers completing a rooftop energy project"
+                  fill
+                  sizes="(max-width: 780px) 100vw, 33vw"
+                />
+              </div>
+              <div className="home-service-copy">
+                <span>End-to-end execution</span>
+                <h3>EPC project delivery</h3>
+                <p>Engineering-led planning, procurement and installation.</p>
+                <i aria-hidden="true">
+                  <ArrowRight size={17} />
+                </i>
+              </div>
+            </Link>
+            <Link href="/products" className="home-service-card">
+              <div className="home-service-image">
+                <Image
+                  src="/product-street-light.png"
+                  alt="Solar street lights illuminating a landscaped road at night"
+                  fill
+                  sizes="(max-width: 780px) 100vw, 33vw"
+                />
+              </div>
+              <div className="home-service-copy">
+                <span>Outdoor applications</span>
+                <h3>Solar lighting</h3>
+                <p>
+                  Street, garden, wall and landscape lighting without cabling.
+                </p>
+                <i aria-hidden="true">
+                  <ArrowRight size={17} />
+                </i>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
 
       <section className="home-planning shell">
         <div className="home-planning-copy">
