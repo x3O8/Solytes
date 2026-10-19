@@ -1,0 +1,351 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  width: min(460px, 100vw);
+  max-width: none;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0 0 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-left: 1px solid var(--border);
+  background: #fff;
+  color: var(--foreground);
+  font-family: var(--font-body), Manrope, sans-serif;
+  box-shadow: -20px 0 80px rgb(31 44 38 / 12%);
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  animation: enter 250ms ease-out;
+}
+.dialog::backdrop {
+  background: rgb(20 30 24 / 36%);
+}
+.header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 26px 16px;
+}
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.header h2 {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+.header h2 span {
+  color: var(--muted);
+  font-size: 23px;
+}
+.iconButton {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--foreground);
+  cursor: pointer;
+}
+.iconButton:hover {
+  background: var(--stone);
+}
+.description {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0 26px 24px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.list {
+  margin: 0;
+  padding: 0 26px;
+  list-style: none;
+}
+.line {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.line:last-child {
+  border-bottom: 0;
+}
+.thumbnail {
+  display: grid;
+  align-self: start;
+  place-items: center;
+  width: 80px;
+  height: 88px;
+  border-radius: 12px;
+  background: var(--stone);
+}
+.thumbnail img {
+  width: 72px;
+  height: 76px;
+  object-fit: contain;
+}
+.lineDetails {
+  min-width: 0;
+}
+.category {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.productName {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.productName:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.unitPrice {
+  margin: 8px 0 0;
+  color: var(--foreground);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.unitPrice span {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+}
+.lineActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 14px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.quantity button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--foreground);
+  cursor: pointer;
+}
+.quantity button:hover:not(:disabled) {
+  background: var(--stone);
+}
+.quantity button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.quantity output {
+  min-width: 28px;
+  padding-inline: 3px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+.remove {
+  min-height: 34px;
+  padding: 4px 0 4px 8px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.remove:hover {
+  color: var(--foreground);
+}
+.lineTotal {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 14px 0 0;
+  font-size: 11px;
+}
+.lineTotal > span {
+  color: var(--muted);
+}
+.lineTotal strong {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.empty {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  text-align: center;
+}
+.emptyIcon {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: var(--stone);
+  color: var(--forest);
+}
+.empty h3 {
+  margin: 0 0 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+.empty p {
+  max-width: 270px;
+  margin: 0 0 26px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.primaryButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  min-height: 48px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--primary, #ccff66);
+  color: var(--primary-foreground);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.primaryButton:hover {
+  background: var(--primary-hover, #baef50);
+}
+.primaryButton svg {
+  flex-shrink: 0;
+}
+.footer {
+  flex-shrink: 0;
+  padding: 22px 26px max(18px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+.subtotal {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.subtotal strong {
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+}
+.footer > p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.footer small {
+  display: block;
+  margin-top: 11px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.continueButton {
+  display: block;
+  min-height: 36px;
+  margin: 9px auto 0;
+  padding: 4px 10px;
+  border: 0;
+  background: transparent;
+  color: var(--foreground);
+  font-size: 11px;
+  cursor: pointer;
+}
+.continueButton:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.dialog :is(a, button):focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 3px;
+}
+@keyframes enter {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 23px 20px 16px;
+  }
+  .description {
+    padding-inline: 20px;
+  }
+  .list {
+    padding-inline: 20px;
+  }
+  .footer {
+    padding-inline: 20px;
+  }
+  .line {
+    gap: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dialog[open] {
+    animation: none;
+  }
+}

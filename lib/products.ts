@@ -1,6 +1,7 @@
 export type Product = {
   slug: string;
   name: string;
+  price: number;
   category: string;
   summary: string;
   description: string;
@@ -14,12 +15,13 @@ export const products: Product[] = [
   {
     slug: 'nova-integrated-street-light',
     name: 'Nova Integrated Street Light',
+    price: 3499,
     category: 'Street lighting',
     summary:
       'A compact, all-in-one solar luminaire for roads, compounds and shared outdoor spaces.',
     description:
       'Nova combines the lighting engine, battery controls and solar-ready architecture in a self-contained pole-mounted format. Final selection is matched to the road width, mounting height and required operating profile.',
-    image: '/product-cutout-1.png',
+    image: '/catalog-product-1.jpeg',
     applications: [
       'Internal roads',
       'Residential compounds',
@@ -42,12 +44,13 @@ export const products: Product[] = [
   {
     slug: 'tribeam-integrated-street-light',
     name: 'TriBeam Integrated Street Light',
+    price: 7499,
     category: 'High-output street lighting',
     summary:
       'A three-module solar street light for wider roads and larger open areas.',
     description:
       'TriBeam uses three independent reflector modules to distribute light across demanding outdoor applications. Solytes specifies the system around mounting height, spacing, road geometry and nightly usage.',
-    image: '/product-cutout-2.png',
+    image: '/catalog-product-2.jpeg',
     applications: [
       'Wide internal roads',
       'Industrial yards',
@@ -70,12 +73,13 @@ export const products: Product[] = [
   {
     slug: 'duobeam-integrated-street-light',
     name: 'DuoBeam Integrated Street Light',
+    price: 5499,
     category: 'Street lighting',
     summary:
       'A balanced two-module luminaire for streets, campuses and perimeter routes.',
     description:
       'DuoBeam pairs a compact integrated body with two reflector modules for broader outdoor coverage. Mounting and operating profiles are planned around the actual site instead of a one-size-fits-all layout.',
-    image: '/product-cutout-3.png',
+    image: '/catalog-product-3.jpeg',
     applications: [
       'Campus roads',
       'Perimeter routes',
@@ -98,12 +102,13 @@ export const products: Product[] = [
   {
     slug: 'shield-motion-wall-light',
     name: 'Shield Motion Wall Light',
+    price: 1499,
     category: 'Security lighting',
     summary:
       'A solar wall light with a broad diffuser and integrated motion sensor.',
     description:
       'Shield is designed for entrances, side passages and utility zones where dependable automatic illumination matters. Its self-contained format keeps installation straightforward and wire-free.',
-    image: '/product-cutout-4.png',
+    image: '/catalog-product-4.jpeg',
     applications: [
       'Entrances',
       'Side passages',
@@ -126,12 +131,13 @@ export const products: Product[] = [
   {
     slug: 'halo-garden-light',
     name: 'Halo Garden Light',
+    price: 4499,
     category: 'Garden lighting',
     summary:
       'A contemporary solar garden fixture for paths, lawns and landscape edges.',
     description:
       'Halo delivers comfortable area light from a sculpted, low-profile form. It is suited to residential and hospitality landscapes where fixtures should look considered in daylight as well as after dark.',
-    image: '/product-cutout-5.png',
+    image: '/catalog-product-5.jpeg',
     applications: ['Garden paths', 'Lawns', 'Resort landscapes', 'Courtyards'],
     highlights: [
       'Wide circular light distribution',
@@ -149,12 +155,13 @@ export const products: Product[] = [
   {
     slug: 'solytes-solar-brick-light',
     name: 'Solytes Solar Brick Light',
+    price: 1299,
     category: 'Architectural lighting',
     summary:
       'A luminous solar paver for pathways, edges and distinctive landscape details.',
     description:
       'This branded solar brick creates an unmistakable point of light within landscape and wayfinding schemes. It can be used as a repeated marker or as a focused identity detail at entrances and public spaces.',
-    image: '/product-cutout-6.png',
+    image: '/catalog-product-6.png',
     applications: [
       'Pathway markers',
       'Entrance features',
@@ -177,12 +184,13 @@ export const products: Product[] = [
   {
     slug: 'focus-landscape-spotlight',
     name: 'Focus Landscape Spotlight',
+    price: 1899,
     category: 'Landscape lighting',
     summary:
       'An adjustable solar spotlight for trees, facades and garden features.',
     description:
       'Focus separates the solar panel from the aimable light head so charging and illumination can each be directed where needed. It is a flexible choice for accent lighting without underground cabling.',
-    image: '/product-cutout-7.png',
+    image: '/catalog-product-7.jpg',
     applications: [
       'Trees and planting',
       'Feature walls',
@@ -205,12 +213,13 @@ export const products: Product[] = [
   {
     slug: 'arc-solar-wall-light',
     name: 'Arc Solar Wall Light',
+    price: 1699,
     category: 'Architectural lighting',
     summary:
       'A clean, curved wall fixture for entrances, balconies and exterior circulation.',
     description:
       'Arc brings solar charging into a compact architectural housing with a soft downward diffuser. Its restrained finish suits contemporary homes and commercial facades.',
-    image: '/product-cutout-8.png',
+    image: '/catalog-product-8.png',
     applications: [
       'Home entrances',
       'Balconies',
@@ -234,4 +243,14 @@ export const products: Product[] = [
 
 export function getProduct(slug: string) {
   return products.find((product) => product.slug === slug);
+}
+
+const rupees = new Intl.NumberFormat('en-IN', {
+  style: 'currency',
+  currency: 'INR',
+  maximumFractionDigits: 0,
+});
+
+export function formatPrice(price: number) {
+  return rupees.format(price);
 }

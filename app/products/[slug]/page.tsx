@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Image from '@/components/optimized-image';
 import Link from '@/components/site-link';
-import { ArrowLeft, ArrowRight, Check, PackageCheck } from 'lucide-react';
+import { ArrowLeft, Check, PackageCheck } from 'lucide-react';
 import { notFound } from 'next/navigation';
-import { getProduct, products } from '@/lib/products';
+import { formatPrice, getProduct, products } from '@/lib/products';
+import { ProductPurchase } from '@/components/product-purchase';
 
 export function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -74,15 +75,14 @@ export default async function ProductDetailPage({
         <div className="product-detail-copy">
           <span className="kicker">{product.category}</span>
           <h1>{product.name}</h1>
+          <div className="product-detail-price">
+            <strong>{formatPrice(product.price)}</strong>
+            <small>Per light</small>
+          </div>
           <p className="product-lead">{product.summary}</p>
           <p>{product.description}</p>
           <div className="product-buy-row">
-            <Link
-              href={`/contact?product=${product.slug}`}
-              className="button button-dark"
-            >
-              Buy now / enquire <ArrowRight size={17} />
-            </Link>
+            <ProductPurchase product={product} />
             <span>
               <PackageCheck size={17} /> Project quantities welcome
             </span>

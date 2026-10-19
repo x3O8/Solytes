@@ -1,54 +1,43 @@
 ---
 version: alpha
-name: 'Solytes Solar Field Guide'
-description: 'A daylight-led brand system that makes solar lighting and EPC planning feel architectural, practical, and accountable.'
+name: 'Solytes Daylight Studio'
+description: 'An architectural solar brand built around daylight, practical engineering and considered outdoor light.'
 colors:
-  background: '#faf9f6'
-  surface: '#fff'
-  foreground: '#303a32'
-  muted: '#697166'
+  background: '#ffffff'
+  surface: '#ffffff'
+  foreground: '#1f2c26'
+  muted: '#627066'
   primary: '#ccff66'
-  primary-hover: '#b9ee4c'
-  daylight-accent: '#e6b774'
-  sky-accent: '#edf1e8'
-  border: '#dfe3d8'
-  focus-ring: '#9c713f'
+  primary-hover: '#baef50'
+  primary-foreground: '#243321'
+  forest: '#4d6a54'
+  sky: '#edf2ea'
+  stone: '#f1f4ee'
+  border: '#dde5da'
+  badge-ink: '#45604b'
+  badge-surface: '#e7ede5'
+  focus-ring: '#4d6a54'
 typography:
   display:
-    fontFamily: 'Bodoni Moda, Georgia, serif'
+    fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'
   body:
     fontFamily: 'Manrope, Arial, sans-serif'
-  logo:
-    fontFamily: 'Space Grotesk, Arial Narrow, Arial, sans-serif'
 rounded:
-  DEFAULT: '10px'
-  control: '9px'
-  field: '13px'
-  navigation: '22px'
+  DEFAULT: '12px'
+  control: '12px'
+  field: '10px'
+  panel: '28px'
+  navigation: '999px'
 spacing:
-  page-max: '1240px'
-  section-min: '104px'
-  section-max: '160px'
+  page-max: '1180px'
+  section-min: '56px'
+  section-max: '92px'
 components:
-  header:
-    backgroundColor: '#fff'
-    textColor: '#303a32'
-    rounded: '0px'
-    height: '84px, 56px when scrolled'
   button:
     backgroundColor: '#ccff66'
-    textColor: '#3c392d'
-    rounded: '9px'
+    textColor: '#243321'
+    rounded: '12px'
     height: '48px'
-  product-card:
-    backgroundColor: 'oklch(1 0 0)'
-    textColor: 'oklch(0.22 0.035 155)'
-    rounded: '18px'
-  form-field:
-    backgroundColor: 'oklch(1 0 0)'
-    textColor: 'oklch(0.22 0.035 155)'
-    rounded: '13px'
-    height: '58px'
 ---
 
 # Solytes Design System
@@ -57,81 +46,86 @@ components:
 
 ### Creative North Star
 
-The site should feel like a quiet solar atelier: daylight, roof planes, fixture silhouettes, specification notes and disciplined site photography. Warm ivory and pale sage keep the interface light around the photography. Apricot carries primary actions with dark warm text, muted forest supports links, and amber marks badges and focus.
+Solar should feel like part of a well-designed place. White page backgrounds and pale sage panels frame architectural photography; botanical ink makes the content clear, and the user's selected solar-lime color identifies primary actions. Helvetica Neue headings restore the original typography; Manrope handles prose and controls. Themely Design+Style Generator rendered this direction as Solytes — Daylight Studio.
 
-The homepage opens with the full-viewport day/night home scene, introduces Solytes through its Kerala service context, then follows a practical decision path: choose lighting or projects, see the site-first method, plan a rooftop system and begin a conversation. Every route uses aligned editorial planes, real photography and warm neutral space. The final navigation becomes a full-bleed white-sky solar meadow, while its content remains aligned to the shared page grid.
+The audience is homeowners, facility teams, landscape designers and project decision-makers across Kerala. The public site helps them explore lighting products, estimate rooftop capacity and begin an informed enquiry. English copy and Indian number formatting are canonical. Do not invent claims, project figures or coverage.
 
-### Product context and register
+The signature is the day/night home scene and an asymmetric services composition: one immersive rooftop feature, with two compact panels for EPC execution and solar lighting. Homepage order: hero, Kerala introduction, products, services, calculator preview, FAQs, enquiry. Products remains third.
 
-- **Audience and primary job:** Homeowners, facility teams, landscape designers, and project decision-makers need to understand Solytes products, estimate a rooftop system, and begin an informed enquiry.
-- **Target market and evidence:** Indian customers are evidenced by INR calculator values and the Kerala project context. The site does not claim wider regional coverage.
-- **Locale and language policy:** English UI with Indian number formatting where money and energy values appear.
-- **Usage scene:** Brand discovery and project research across mobile and desktop; generous marketing layouts transition into compact, practical forms and specifications.
-- **Register:** Brand-led marketing on public routes, with product-like clarity for the calculator and enquiry form.
-- **Memorable signature:** The home hero's fully rounded morning/night control demonstrates the actual solar story: the same home captures energy in daylight and glows after dark. A precise Kerala silhouette with city markers grounds the company locally, and the footer closes the story with an illustrated solar field whose white sky dissolves into the navigation surface.
-- **Restraint:** Forms, specifications, navigation, and calculator controls stay familiar, semantic, and quiet.
-- **Anti-references:** Avoid generic eco leaves, sunburst gradients, neon-tech dashboards, excessive rounded cards, and decorative motion that is unrelated to energy or light.
-- **Token ownership/runtime mapping:** Shared runtime values in `app/globals.css` are canonical. Route-specific composition lives in colocated CSS modules; `app/products/products.module.css` owns the catalog hero and guidance layout, while `components/product-catalog.module.css` owns filters and product cards. This document records their roles and rationale; font variables are wired in `app/layout.tsx`.
+Runtime colors and shared rules in app/globals.css are canonical. The final Daylight Studio token block supersedes legacy palette declarations. app/layout.tsx wires font variables, with Helvetica Neue as the shared heading face and Manrope for body copy. Product composition lives in app/products/products.module.css; catalog controls/cards live in components/product-catalog.module.css. These modules consume shared color tokens.
 
 ## Colors
 
-Bright solar lime is the primary action color, with dark leaf text for contrast. Pale sage supports utility panels, ivory grounds the page, and muted forest defines links and structural text. Amber remains reserved for badges and focus. The primary page and section canvas is pure white, giving product photography and dark fixtures room to read clearly. Focus rings remain visible in all surfaces. Forced-colors mode returns control to the system.
+Use the frontmatter values. Primary lime has dark ink, including on photographic surfaces. Secondary controls use white, muted sage or simple text. Badges use pale sage with green text. Keep the contact heading black as explicitly requested. A subtle grain connects the surfaces without intercepting input. New controls avoid dark blue, mustard and amber. The original logo artwork and photography retain their colors.
 
 ## Typography
 
-Bodoni Moda carries display headlines, including the home hero, bringing a considered editorial contrast to the site’s architectural solar field-guide voice. Manrope handles prose, controls, and specifications for legibility. Headlines use restrained weights, close tracking, and balanced line breaks; body copy remains sentence case with comfortable line height. Numeric outputs use the body family and Indian number formatting rather than a decorative data font.
+Helvetica Neue handles headings at weight 400 with close tracking and balanced line lengths. Manrope handles body text, navigation, fields and buttons. Body text uses comfortable line height. Do not add new external font families. Keep carousel title and description rows stable as products change.
 
 ## Layout
 
-The main canvas is capped at 1180px with wide editorial breathing room. Pages alternate between immersive full-bleed imagery and aligned content planes. The full-width white header follows the Superpower reference: links on the left, a centered wordmark, and enquiry, Shop Now and a nine-dot menu on the right. Scrolling turns the header into a centered 56px floating sage pill with a separate circular dot menu. The hero has rounded corners on all sides and an 8px white frame, with its height sized to show the lower corners in the initial viewport. The dot menu opens a native modal side panel with grouped navigation, keyboard focus containment, Escape and backdrop dismissal. On mobile the wordmark sits left and the CTA and menu sit right. On narrow screens, navigation becomes a compact disclosure, product navigation gains explicit horizontal scrolling, and actions remain at least 44px high. Images reserve their geometry, and page-level horizontal overflow is not allowed.
+The shell caps at 1180px. Editorial sections use 56–92px padding, with smaller gaps between adjacent home sections and 48px on mobile. Preserve the rounded hero and its visible white frame.
+
+The fixed header starts wide and becomes a compact sage pill on scroll without changing document height. On mobile the logo, Shop Now action and menu remain visible. The native modal menu contains focus, closes with Escape and restores scrolling on dismissal.
+
+Use native document scrolling. overscroll-behavior-y: none on html and body prevents bottom-edge rebound while preserving intentional upward scrolling. Do not intercept wheel, touch or keyboard input, or globally disable scroll anchoring. Scrollbars stay visible with green/stone colors; forced colors uses system colors.
 
 ## Elevation & Depth
 
-Depth comes from photography, tonal layering, and translucent navigation rather than a stack of card shadows. Static content stays mostly flat with borders and background shifts. Shadows are reserved for the floating header, the day/night control, and compact glass panels over photography such as the calculator preflight list.
+Photography and tonal surfaces provide depth. Product and service panels use restrained borders. Soft shadows are reserved for floating navigation, the day/night control and the calculator panel over photography.
 
 ## Shapes
 
-The system uses compact softened rectangles, not pills. Controls sit near a 9-13px radius; the floating navigation is the deliberate large-radius exception. Product collections and information sections prefer large planes with crisp dividers, while the footer landscape runs edge to edge. Lucide icons use consistent strokes and stay secondary to text labels.
+Large panels use a 24–28px radius; controls use 10–12px. Navigation and small tags are deliberate pill exceptions. Services has a large rooftop image with a dark legibility overlay at left, and two image/copy panels at right. At tablet size the feature spans the row; on mobile all offerings stack in reading order.
 
 ## Components
 
-### Foundational visual states
-
-All enabled controls have visible hover, focus-visible, and pressed states. Focus uses the shared ring token with an offset. Selected states combine color with position, underline, or `aria-pressed`; they never rely on color alone. Reduced-motion preferences collapse transitions and stop the logo marquee.
-
 ### Buttons and actions
 
-Primary actions use bright solar lime with dark leaf text on pale surfaces, with a white arrow tile where an arrow icon is present. On dark photographic surfaces, actions use the same lime for visibility. Secondary actions remain white or text links with directional icons. Labels describe the destination or result: “View product,” “Open solar calculator,” and “Prepare enquiry email.” Button dimensions remain stable across interaction states.
+Primary actions use solar lime and dark ink with clear destination labels. Secondary actions are white or text. Existing primary-button arrow tiles remain white. The homepage View Products button has no arrow, as requested. Service links expose meaningful action labels, hover and visible keyboard-focus states. All links use real destinations.
 
 ### Navigation and data display
 
-The shared header is rendered by `components/site-header.tsx`. The homepage treatment uses a light sunrise mark and white navigation over the hero, balanced by a compact white Enquire pill. Inner pages swap to the dark wordmark and ink text on a restrained translucent white surface. Mobile uses a semantic menu disclosure with Escape and outside-press closing. The products route uses a two-column browsing grid, real-use imagery where available, compact URL-backed filters and restrained application tags. Product indexes and project stage numbers are used only where the sequence or collection order is meaningful.
+components/site-header.tsx owns navigation; components/site-link.tsx owns route-aware links. The product catalog retains URL-backed filters, clear search and accessible native sort. Use links for navigation and buttons for actions. Name icon-only controls.
 
 ### Forms and overlays
 
-The homepage and contact page share a pale-blue section and white form surface, with navy text and actions, bordered light fields and a restrained warm kicker. The --enquiry-* variables in app/globals.css own this shared palette: ink #1c3556, muted #5f7080, surface #f3f7fa, border #d9e2e9, hover #2b5076. Forms use real labels, native fields, owned focus styling, inline text errors, and `noValidate`. The contact and newsletter actions honestly open the visitor's email application for review rather than implying a completed server submission. Native selects are acceptable because no custom popup geometry is required.
+Home and contact share sage sections, white form panels, dark labels, pale fields and green focus. Native select popups are intentionally platform-owned. Preserve labels, inline validation and entered values. Enquiry opens the visitor's email app for review; it does not imply a completed submission. Email is info@solytes.com. The homepage phone +91 7561028248 sits after email and before the response window.
 
 ### Iconography
 
-Lucide React is the shared icon family. Icons are normally 14-18px, stroke-based, optically aligned with text, and paired with labels except for universally understood menu controls that have accessible names.
+Use Lucide React 14–18px strokes paired with labels. Directional icons reinforce navigation. Do not use decorative numbering to suggest a sequence among unrelated offerings.
 
 ### Motion
 
-Motion explains a state change: the fixed-scale day-to-night hero crossfade, product-image emphasis, or directional hover feedback. Ambient motion is limited to the partner-logo drift. The shared easing is `cubic-bezier(0.25, 1, 0.5, 1)`; reduced-motion disables nonessential transitions and animation.
+Motion explains state changes and small image emphasis. Shared easing is cubic-bezier(0.25, 1, 0.5, 1). Reduced motion disables nonessential transitions, carousel autoplay and the logo marquee. Hover never reveals otherwise inaccessible content.
 
 ### Loading and delivery
 
-Shared route feedback uses the existing ivory canvas, forest text and a small progress ring. `components/site-link.tsx` follows the router's pending state and `app/loading.tsx` supplies the route fallback; neither adds an artificial wait. Reduced motion stops the ring. A failed route offers a retry. Product filters update locally while preserving shareable URLs. The homepage carousel runs only while visible and pauses while the tab is hidden or the carousel is hovered or focused.
-
-`components/optimized-image.tsx` owns responsive image delivery from `lib/image-manifest.json`. Run `npm run optimize:images` after changing source artwork to generate content-hashed WebP variants. Image dimensions reserve layout space, below-fold images load lazily, and only visible primary artwork gets high priority. The night scene is requested on first selection; the daylight scene remains visible until it loads.
+Reserve media geometry. components/optimized-image.tsx and lib/image-manifest.json deliver responsive images. Regenerate variants only when source artwork changes. Request the night scene on demand and keep daylight visible until loaded. Carousel autoplay pauses while hidden, hovered or focused. Route feedback adds no artificial wait.
 
 ### Content and data visualization
 
-Copy is direct and site-specific. It starts with the space, load, site, or application instead of vague sustainability claims. Technical estimates are explicitly framed as planning guidance, never final engineering or financial proposals.
+Describe actual applications: rooftops, outdoor light, energy use and project scope. Calculator results are early planning estimates, not final engineering proposals. Do not fabricate metrics, accreditations or testimonials.
 
 ## Do's and Don'ts
 
-- **Do:** Use real product and site imagery as the primary visual evidence.
-- **Do:** Keep the same typography, action hierarchy, focus treatment, and spacing rhythm on every route.
-- **Don't:** add generic green gradients, leaf motifs, or sustainability claims that are not supported by the product content. Reserve glass surfaces for the floating navigation and the newsletter panel over photography.
-- **Don't:** trade legibility, semantic controls, reduced-motion support, or mobile reading order for visual novelty.
+- Keep typography, palette, spacing, focus and action treatments consistent across routes.
+- Preserve the user's light palette, lime buttons, contact details and product-section order.
+- Use site and product photography as evidence.
+- Avoid generic leaves, gradients, excessive shadows and unrelated motion.
+- Preserve mobile reading order, keyboard access, legibility and layout stability.
+
+### Storefront and quote basket
+
+The products route is a shopping-first catalogue: a compact heading/search/basket bar, category navigation, desktop filter sidebar, mobile filter disclosure, sorting and a three-column product grid (two columns on narrow screens). Product photography uses the original clean catalogue images rather than lifestyle scenes or artwork with baked checkerboards.
+
+The owner explicitly requested initial estimated prices displayed as normal shop prices and intends to replace them later. Every Product.price in lib/products.ts is an editable integer number of rupees; formatPrice owns Indian currency formatting. Initial values range from 1299 to 7499, informed by Indian retailer comparisons (Hardoll and Tapetum, checked 19 October 2026). These are owner-authorized draft prices, not a claim that the retailer's products and specifications are identical. Do not invent crossed-out MRPs, discount percentages, ratings, stock or shipping promises.
+
+Catalog search, category, installation, feature and sort choices use the URL. Filtering is local and immediate. Sorting includes alphabetical and price order. A no-results state offers a full reset. Native radios, checkboxes and the native sort select intentionally retain platform-owned behavior.
+
+lib/quote-basket-store.ts owns the saved basket through useSyncExternalStore and browser localStorage. It stores product slugs and integer quantities from 1 to 999; it validates stored values and synchronizes changes between tabs and after navigation. Storage failures retain an in-memory session. components/quote-basket.tsx owns one native modal drawer shared by the catalogue and product detail purchase control. Escape/backdrop/close restore focus and document scrolling; quantity and removal controls have accessible names.
+
+Cards, detail pages, basket lines and product totals read the same price field. There is no payment processor or order backend. Request a quote prepares an email with the selected products, quantities, prices and product links for the visitor to review and send. Shipping and final pricing are confirmed by the team. Do not present an unimplemented checkout, a completed order or an email-success claim.
+
+The FAQ card now uses the site-assessment photograph home-process-read-site.png. The footer brand area contains a full-width official wordmark without the former caption; footer-only cropping removes transparent image padding while retaining the entire mark.

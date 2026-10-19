@@ -4,6 +4,7 @@ import Image from '@/components/optimized-image';
 import Link from '@/components/site-link';
 import {
   ArrowRight,
+  ArrowUpRight,
   Calculator,
   ChevronDown,
   ChevronLeft,
@@ -313,81 +314,73 @@ export default function Home() {
       </section>
       <section
         id="services"
-        className="home-services"
+        className="service-studio shell"
         aria-labelledby="home-services-title"
       >
-        <div className="shell home-services-inner">
-          <header>
-            <span className="kicker">Services Offered</span>
-            <h2 id="home-services-title">Built around real places.</h2>
+          <header className="service-studio-heading">
+            <div>
+              <span className="kicker">Services offered</span>
+              <h2 id="home-services-title">Your space.<br />Powered by the sun.</h2>
+            </div>
             <p>
-              From rooftops that need more independence to pathways that need a
-              softer glow, we design for the space, the people and the outcome.
+              Generate on your rooftop. Bring a project to life. Light the way
+              home. We plan every detail around the place and the people using it.
             </p>
           </header>
-          <div className="home-service-grid">
-            <Link href="/calculator" className="home-service-card">
-              <div className="home-service-image">
+          <div className="service-studio-grid">
+            <Link href="/calculator" className="service-feature">
                 <Image
                   src="/solytes-clean-home-day.png"
                   alt="A modern home with rooftop solar panels in daylight"
                   fill
-                  sizes="(max-width: 780px) 100vw, 33vw"
+                  sizes="(max-width: 900px) 100vw, 55vw"
                 />
-              </div>
-              <div className="home-service-copy">
-                <span>Homes and businesses</span>
+              <span className="service-tag">For homes &amp; businesses</span>
+              <div className="service-feature-copy">
                 <h3>Rooftop solar</h3>
                 <p>
-                  System sizing and rooftop planning based on real energy use.
+                  Turn your roof into a source of everyday energy, with a system
+                  designed around your electricity use.
                 </p>
-                <i aria-hidden="true">
-                  <ArrowRight size={17} />
-                </i>
+                <span className="service-action">Find your system size <ArrowUpRight size={18} aria-hidden="true" /></span>
               </div>
             </Link>
-            <Link href="/projects" className="home-service-card">
-              <div className="home-service-image">
+            <Link href="/projects" className="service-panel">
+              <div className="service-panel-media">
                 <Image
                   src="/home-process-deliver.png"
                   alt="Solar installers completing a rooftop energy project"
                   fill
-                  sizes="(max-width: 780px) 100vw, 33vw"
+                  sizes="(max-width: 600px) 40vw, (max-width: 900px) 45vw, 22vw"
                 />
               </div>
-              <div className="home-service-copy">
-                <span>End-to-end execution</span>
+              <div className="service-panel-copy">
+                <span className="service-caption">From plan to handover</span>
                 <h3>EPC project delivery</h3>
-                <p>Engineering-led planning, procurement and installation.</p>
-                <i aria-hidden="true">
-                  <ArrowRight size={17} />
-                </i>
+                <p>Engineering, procurement and installation. One team for the whole project.</p>
+                <span className="service-panel-action">Explore projects <ArrowUpRight size={17} aria-hidden="true" /></span>
               </div>
             </Link>
-            <Link href="/products" className="home-service-card">
-              <div className="home-service-image">
+            <Link href="/products" className="service-panel service-panel-lighting">
+              <div className="service-panel-media">
                 <Image
                   src="/product-street-light.png"
                   alt="Solar street lights illuminating a landscaped road at night"
                   fill
-                  sizes="(max-width: 780px) 100vw, 33vw"
+                  sizes="(max-width: 600px) 40vw, (max-width: 900px) 45vw, 22vw"
                 />
               </div>
-              <div className="home-service-copy">
-                <span>Outdoor applications</span>
+              <div className="service-panel-copy">
+                <span className="service-caption">Life after sunset</span>
                 <h3>Solar lighting</h3>
                 <p>
-                  Street, garden, wall and landscape lighting without cabling.
+                  Considered light for streets, gardens and outdoor spaces. Powered by daylight.
                 </p>
-                <i aria-hidden="true">
-                  <ArrowRight size={17} />
-                </i>
+                <span className="service-panel-action">Find your lighting <ArrowUpRight size={17} aria-hidden="true" /></span>
               </div>
             </Link>
           </div>
-        </div>
       </section>
-
 
       <section className="home-planning shell">
         <div className="home-planning-copy">
@@ -444,10 +437,11 @@ export default function Home() {
             <div className="home-faq-card">
               <div className="home-faq-card-image">
                 <Image
-                  src="/solytes-faq-architecture-v2.png"
-                  alt="A modern Kerala home with rooftop solar in soft morning light"
+                  src="/home-process-read-site.png"
+                  alt="A solar specialist assessing a Kerala home before planning a rooftop system"
                   fill
-                  sizes="(max-width: 780px) 160px, 190px"
+                  sizes="(max-width: 780px) 40vw, 340px"
+                  style={{ objectPosition: '28% center' }}
                 />
               </div>
               <div>

@@ -19,10 +19,6 @@ export function SiteFooter() {
         <div className="shell footer-columns">
           <div className="footer-brand">
             <SiteLogo variant="footer" />
-            <p>
-              Solar lighting, rooftop systems and EPC execution shaped around
-              real sites.
-            </p>
           </div>
           <nav aria-label="Explore Solytes">
             <span>Explore</span>

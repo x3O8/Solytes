@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Clock3, Mail, MapPin } from 'lucide-react';
+import { Clock3, Mail, Phone } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
@@ -29,17 +29,17 @@ export default function ContactPage() {
               </span>
             </div>
             <div>
+              <Phone />
+              <span>
+                <small>Call us</small>
+                <a href="tel:+917561028248">+91 7561028248</a>
+              </span>
+            </div>
+            <div>
               <Clock3 />
               <span>
                 <small>Response window</small>
                 <strong>Within one working day</strong>
-              </span>
-            </div>
-            <div>
-              <MapPin />
-              <span>
-                <small>Project coverage</small>
-                <strong>Location confirmed during enquiry</strong>
               </span>
             </div>
           </div>
