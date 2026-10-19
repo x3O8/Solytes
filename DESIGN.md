@@ -128,4 +128,4 @@ lib/quote-basket-store.ts owns the saved basket through useSyncExternalStore and
 
 Cards, detail pages, basket lines and product totals read the same price field. There is no payment processor or order backend. Request a quote prepares an email with the selected products, quantities, prices and product links for the visitor to review and send. Shipping and final pricing are confirmed by the team. Do not present an unimplemented checkout, a completed order or an email-success claim.
 
-The FAQ card now uses the site-assessment photograph home-process-read-site.png. The footer brand area contains a full-width official wordmark without the former caption; footer-only cropping removes transparent image padding while retaining the entire mark.
+The FAQ card now uses the site-assessment photograph home-process-read-site.png. The footer brand area uses the compact 190px official wordmark with its original caption beneath it.

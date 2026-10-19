@@ -23,7 +23,7 @@ export function SiteLogo({
         alt=""
         width={763}
         height={327}
-        sizes={isFooterMark ? '(max-width: 780px) 92vw, 380px' : '180px'}
+        sizes="180px"
       />
     </Link>
   );

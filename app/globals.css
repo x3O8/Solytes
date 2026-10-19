@@ -5338,15 +5338,8 @@ h3 {
   transform: translateX(2px);
 }
 .footer-brand .site-logo.footer-logo {
-  width: 100%;
-  aspect-ratio: 763 / 150;
-  overflow: hidden;
+  width: 190px;
   filter: none;
-}
-.footer-brand .site-logo.footer-logo img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 .footer-field-card .footer-meta {
   position: absolute;
