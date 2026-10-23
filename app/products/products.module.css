@@ -84,3 +84,4 @@
     justify-content: center;
   }
 }
+.support > div:nth-child(2) { min-width: 0; }

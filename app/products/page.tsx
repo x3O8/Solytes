@@ -4,6 +4,8 @@ import { ArrowRight, Lightbulb } from 'lucide-react';
 import { ProductCatalog } from '@/components/product-catalog';
 import { products } from '@/lib/products';
 import styles from './products.module.css';
+import { ApplicationExplorer } from '@/components/application-explorer';
+import { InteriorReveal } from '@/components/interior-reveal';
 
 export const metadata: Metadata = {
   title: 'Shop Solar Lighting',
@@ -15,6 +17,9 @@ export default function ProductsPage() {
   return (
     <main className={`page-main ${styles.page}`}>
       <ProductCatalog products={products} />
+      <InteriorReveal>
+        <ApplicationExplorer kind="lighting" />
+      </InteriorReveal>
       <section
         className={`shell ${styles.support}`}
         aria-labelledby="shop-support-title"

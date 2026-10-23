@@ -29,7 +29,7 @@ rounded:
   panel: '28px'
   navigation: '999px'
 spacing:
-  page-max: '1180px'
+  page-width: 'fluid, uncapped'
   section-min: '56px'
   section-max: '92px'
 components:
@@ -64,7 +64,7 @@ Helvetica Neue handles headings at weight 400 with close tracking and balanced l
 
 ## Layout
 
-The shell caps at 1180px. Editorial sections use 56–92px padding, with smaller gaps between adjacent home sections and 48px on mobile. Preserve the rounded hero and its visible white frame.
+The shared shell has no maximum width and expands with the viewport. Side gutters use clamp(16px, 1.5vw, 32px), retaining 16px gutters on mobile. app/globals.css owns --page-gutter and --page-inset; navigation, about imagery, gallery and footer align to these shared dimensions. The scrolled navigation retains its pill shape without a fixed width cap. Text blocks retain their readable line-length limits. Editorial sections use 56–92px padding, with smaller gaps between adjacent home sections and 48px on mobile. Preserve the rounded hero and its visible white frame.
 
 The fixed header starts wide and becomes a compact sage pill on scroll without changing document height. On mobile the logo, Shop Now action and menu remain visible. The native modal menu contains focus, closes with Escape and restores scrolling on dismissal.
 
@@ -129,3 +129,5 @@ lib/quote-basket-store.ts owns the saved basket through useSyncExternalStore and
 Cards, detail pages, basket lines and product totals read the same price field. There is no payment processor or order backend. Request a quote prepares an email with the selected products, quantities, prices and product links for the visitor to review and send. Shipping and final pricing are confirmed by the team. Do not present an unimplemented checkout, a completed order or an email-success claim.
 
 The FAQ card now uses the site-assessment photograph home-process-read-site.png. The footer brand area uses the compact 190px official wordmark with its original caption beneath it.
+
+Interior route alignment: About and Gallery intros use the same uncapped shell as their media. Projects uses a framed hero without negative offsets or duplicate top padding; its service heading occupies one text column. Gallery uses paired 3:2 media rows and stacks on phones. About imagery uses an explicit responsive aspect ratio, and the final action aligns with the service list. Product cards reserve matching text rows and switch to four columns from 1500px. Breakpoints were checked at 1440, 768 and 390px without horizontal overflow.

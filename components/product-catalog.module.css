@@ -855,3 +855,16 @@
     border: 1px solid ButtonText;
   }
 }
+
+/* Keep catalogue rows aligned across long product names and fluid widths. */
+.storeHeader > *, .cardBody > * { min-width: 0; }
+.cardBody { display: grid; grid-template-rows: auto 3.45em 3.1em minmax(28px, auto) auto auto auto; align-content: start; }
+.cardBody h2 { min-height: 0; }
+.cardBody .price { margin-top: 0; }
+.spec { align-content: start; }
+@media (min-width: 1500px) {
+  .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 1060px) {
+  .storeHeader { grid-template-columns: minmax(220px, auto) minmax(0, 1fr) auto; }
+}

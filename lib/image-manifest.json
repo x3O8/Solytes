@@ -775,6 +775,48 @@
       }
     ]
   },
+  "/solar-application-campus.png": {
+    "width": 512,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solar-application-campus-fe24d4cfc3ba-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-application-campus-fe24d4cfc3ba-512.webp",
+        "width": 512
+      }
+    ]
+  },
+  "/solar-application-garden.png": {
+    "width": 512,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solar-application-garden-2b0785295c5e-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-application-garden-2b0785295c5e-512.webp",
+        "width": 512
+      }
+    ]
+  },
+  "/solar-application-home.png": {
+    "width": 512,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/optimized/solar-application-home-9ea7dd458134-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/optimized/solar-application-home-9ea7dd458134-512.webp",
+        "width": 512
+      }
+    ]
+  },
   "/solar-landscape-continuum.png": {
     "width": 1536,
     "height": 1024,

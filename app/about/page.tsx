@@ -1,110 +1,125 @@
 import type { Metadata } from 'next';
 import Image from '@/components/optimized-image';
 import Link from '@/components/site-link';
-import { ArrowRight, Check } from 'lucide-react';
-
+import { ArrowRight } from 'lucide-react';
+import { InteriorReveal } from '@/components/interior-reveal';
+import styles from '@/components/interior-pages.module.css';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn how Solytes connects solar products, thoughtful design and accountable project execution.',
+    'Meet the Solytes approach to solar lighting, rooftop planning and coordinated EPC delivery.',
 };
-
+const values = [
+  [
+    'Useful by design',
+    'A light should serve its setting. A rooftop system should suit the way a building uses energy. We start with the requirement, then work towards the specification.',
+  ],
+  [
+    'Clear in scope',
+    'Equipment choices, assumptions, inclusions and next steps belong in the conversation before installation begins. Clear scope helps everyone make better decisions.',
+  ],
+  [
+    'Connected in delivery',
+    'Product selection, engineering and execution work better when considered together. We approach the project as one joined-up process.',
+  ],
+];
 export default function AboutPage() {
   return (
     <main className="page-main">
-      <section className="about-hero shell">
-        <div>
-          <span className="kicker">About Solytes</span>
-          <h1>Solar should be easier to understand—and better to live with.</h1>
-        </div>
-        <p>
-          We approach solar as a complete experience: the right product, the
-          right system size, the right installation detail and a clear path from
-          decision to delivery.
-        </p>
-      </section>
-      <section className="about-image">
-        <Image
-          src="/solytes-hero-night.png"
-          alt="Solar-powered home after dark"
-          fill
-          priority
-          sizes="100vw"
-        />
-      </section>
-      <section className="section shell about-story">
-        <div>
-          <span className="kicker">What guides us</span>
-          <h2>Clarity before complexity.</h2>
-        </div>
-        <div>
+      <InteriorReveal>
+        <section className={`shell ${styles.intro}`}>
+          <h1>Solar, thoughtfully connected.</h1>
           <p>
-            Solar projects often become crowded with specifications before the
-            real requirement is understood. Solytes starts with the space, the
-            energy use and the outcome the customer needs.
+            From a garden path to a working rooftop, Solytes brings products,
+            planning and project execution together around the places people
+            live and work.
           </p>
-          <p>
-            That approach carries from an architectural garden light to a
-            rooftop EPC project: practical recommendations, disciplined design
-            and straightforward communication.
-          </p>
-        </div>
-      </section>
-      <section className="soft-section section">
-        <div className="shell values-grid">
-          <article>
-            <span>01</span>
-            <h3>Useful by design</h3>
+        </section>
+        <figure className={styles.heroMedia}>
+          <Image
+            src="/solar-application-garden.png"
+            alt="Illustrated tropical garden illuminated by solar pathway lights"
+            fill
+            priority
+            sizes="100vw"
+          />
+          <figcaption>
+            Light for everyday spaces · Application illustration
+          </figcaption>
+        </figure>
+        <section className={`shell ${styles.story}`} data-reveal>
+          <h2>Start with the place. Then the possibilities.</h2>
+          <div>
             <p>
-              Every product and system should solve a real site requirement—not
-              simply add another specification.
+              A home, a garden and a campus ask different things of solar. We
+              begin with the space, how it is used and what the customer wants
+              to improve.
             </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Clear in scope</h3>
             <p>
-              Assumptions, inclusions and next steps should be understandable
-              before work begins.
+              That carries through from selecting an outdoor light to planning a
+              rooftop system: practical recommendations, considered design and
+              straightforward communication.
             </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Accountable in delivery</h3>
+            <Link href="/contact" className="button button-dark">
+              Talk to Solytes <ArrowRight size={17} />
+            </Link>
+          </div>
+        </section>
+        <section className={styles.values}>
+          <div className="shell">
+            <div className={styles.sectionHeading}>
+              <h2>What guides the work.</h2>
+              <p>
+                Simple principles that keep the conversation focused on your
+                site and your needs.
+              </p>
+            </div>
+            <div className={styles.valueRows}>
+              {values.map(([title, text]) => (
+                <article key={title} data-reveal>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className={`shell ${styles.story}`} data-reveal>
+          <div>
+            <h2>Small details. A joined-up view.</h2>
+            <p style={{ marginTop: 24 }}>
+              Solar garden and landscape lighting. Street and infrastructure
+              lighting. Rooftop solar planning. EPC project coordination.
+            </p>
+            <Link href="/products" className="button button-dark">
+              Explore our products <ArrowRight size={17} />
+            </Link>
+          </div>
+          <figure
+            className={styles.applicationImage}
+            style={{ borderRadius: 24, overflow: 'hidden' }}
+          >
+            <Image
+              src="/solar-application-home.png"
+              alt="Residential rooftop solar application illustration"
+              fill
+              sizes="(max-width: 760px) 100vw, 50vw"
+            />
+            <figcaption>Application illustration</figcaption>
+          </figure>
+        </section>
+        <section className={`shell ${styles.closeSection}`} data-reveal>
+          <div>
+            <h2>Bring your idea into the light.</h2>
             <p>
-              One joined-up view of product, engineering and execution reduces
-              avoidable handoff gaps.
+              A photograph, a roof plan or a question is a good place to start.
             </p>
-          </article>
-        </div>
-      </section>
-      <section className="section shell about-services">
-        <div>
-          <span className="kicker">What we bring together</span>
-          <h2>Products, planning and projects.</h2>
-        </div>
-        <ul className="check-list">
-          <li>
-            <Check />
-            Solar lighting for home and landscape
-          </li>
-          <li>
-            <Check />
-            Street and infrastructure lighting
-          </li>
-          <li>
-            <Check />
-            Rooftop solar planning
-          </li>
-          <li>
-            <Check />
-            EPC project coordination
-          </li>
-        </ul>
-        <Link href="/contact" className="button button-dark">
-          Work with Solytes <ArrowRight size={17} />
-        </Link>
-      </section>
+          </div>
+          <Link href="/contact" className="button button-dark">
+            Start a conversation <ArrowRight size={17} />
+          </Link>
+        </section>
+      </InteriorReveal>
     </main>
   );
 }

@@ -1,0 +1,504 @@
+.intro {
+  padding-block: 58px 42px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: end;
+}
+.intro h1 {
+  margin: 0;
+  font-size: clamp(42px, 5.8vw, 84px);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  max-width: 15ch;
+  text-wrap: balance;
+}
+.intro p {
+  max-width: 54ch;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+}
+.heroMedia {
+  position: relative;
+  height: clamp(320px, 49vw, 690px);
+  margin-inline: var(--page-gutter, 20px);
+  overflow: hidden;
+  border-radius: 28px;
+}
+.heroMedia img {
+  object-fit: cover;
+}
+.heroMedia figcaption,
+.applicationImage figcaption {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  color: white;
+  background: #1f2c26e8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.sectionHeading {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 32px;
+}
+.sectionHeading h2,
+.story h2,
+.closeSection h2 {
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 0;
+  max-width: 20ch;
+  text-wrap: balance;
+}
+.sectionHeading p {
+  max-width: 55ch;
+  line-height: 1.7;
+  margin: 0;
+}
+.explorer {
+  padding-block: 80px;
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.tabs button {
+  background: var(--sky, #edf2ea);
+  color: #1f2c26;
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 23px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  transition:
+    background-color 160ms ease-out,
+    transform 160ms ease-out;
+}
+.tabs button[aria-selected="true"],
+.tabs button[aria-pressed="true"] {
+  background: #ccff66;
+}
+.tabs button:active,
+.galleryImage:active {
+  transform: scale(0.98);
+}
+.tabs button:focus-visible,
+.galleryImage:focus-visible,
+.lightbox button:focus-visible {
+  outline: 3px solid #4d6a54;
+  outline-offset: 4px;
+}
+.application {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  margin-top: 22px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #edf2ea;
+}
+.applicationImage {
+  position: relative;
+  margin: 0;
+  min-height: 520px;
+}
+.applicationImage img {
+  object-fit: cover;
+}
+.applicationCopy {
+  padding: clamp(28px, 5vw, 76px);
+  align-self: center;
+}
+.applicationCopy h3 {
+  font-size: clamp(30px, 3.6vw, 50px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 24px;
+  text-wrap: balance;
+}
+.applicationCopy p,
+.applicationCopy li {
+  line-height: 1.75;
+  font-size: 15px;
+}
+.applicationCopy ul {
+  padding-left: 20px;
+  margin-block: 24px 30px;
+}
+.applicationCopy li {
+  margin-block: 10px;
+  padding-left: 6px;
+}
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding-block: 90px;
+}
+.story p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 20px;
+  max-width: 60ch;
+}
+.story a {
+  margin-top: 16px;
+}
+.journey {
+  padding-block: 80px;
+  background: #edf2ea;
+}
+.journeyGrid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 60px;
+  align-items: start;
+}
+.journeyIntro {
+  position: sticky;
+  top: 120px;
+}
+.journeyIntro h2 {
+  font-size: clamp(36px, 4.6vw, 64px);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 24px;
+  max-width: 13ch;
+}
+.journeyIntro p {
+  max-width: 40ch;
+  line-height: 1.75;
+}
+.journeySteps {
+  display: grid;
+  gap: 28px;
+}
+.journeySteps article {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 28px;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.journeyPicture {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.journeyPicture img {
+  object-fit: cover;
+}
+.journeySteps h3 {
+  font-size: 26px;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+.journeySteps p {
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+}
+.values {
+  background: #edf2ea;
+  padding-block: 80px;
+}
+.valueRows {
+  display: grid;
+  gap: 16px;
+  margin-top: 34px;
+}
+.valueRows article {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 40px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+}
+.valueRows h3 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.025em;
+}
+.valueRows p {
+  line-height: 1.75;
+  margin: 0;
+  max-width: 65ch;
+}
+.closeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-block: 80px;
+}
+.closeSection p {
+  max-width: 55ch;
+  line-height: 1.7;
+  margin: 20px 0 0;
+}
+.closeSection a {
+  flex-shrink: 0;
+}
+.gallery {
+  padding-bottom: 30px;
+}
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-block: 12px 30px;
+}
+.filterBar > p {
+  white-space: nowrap;
+  font-size: 14px;
+}
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px 24px;
+}
+.galleryGrid figure {
+  margin: 0;
+  min-width: 0;
+}
+.galleryImage {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  padding: 0;
+  cursor: zoom-in;
+  background: #edf2ea;
+  transition: transform 180ms ease-out;
+}
+.galleryImage img {
+  object-fit: cover;
+  transition: transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.galleryImage > span {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  color: #1f2c26;
+}
+@media (hover: hover) {
+  .galleryImage:hover img {
+    transform: scale(1.035);
+  }
+  .tabs button:hover {
+    background: #dce8d3;
+  }
+}
+.galleryGrid figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding-top: 18px;
+}
+.galleryGrid h2 {
+  font-size: clamp(23px, 2.3vw, 34px);
+  line-height: 1.15;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+.galleryGrid p {
+  font-size: 12px;
+  margin: 0;
+}
+.galleryGrid figcaption a {
+  padding: 12px;
+  border-radius: 50%;
+  background: #edf2ea;
+}
+.lightbox {
+  width: min(1140px, 94vw);
+  max-height: 92dvh;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  color: #1f2c26;
+  background: white;
+}
+.lightbox::backdrop {
+  background: #14201be8;
+}
+.lightboxBody {
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+}
+.lightbox button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: white;
+  color: #1f2c26;
+  cursor: pointer;
+}
+.lightboxImage {
+  position: relative;
+  height: min(64dvh, 650px);
+  background: #edf2ea;
+}
+.lightboxImage img {
+  object-fit: contain;
+}
+.lightboxCaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+}
+.lightboxCaption h2 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+.lightboxCaption p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 65ch;
+}
+.lightboxControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.lightboxControls button {
+  background: #edf2ea;
+}
+@media (max-width: 760px) {
+  .intro,
+  .sectionHeading,
+  .story,
+  .journeyGrid,
+  .valueRows article {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .intro {
+    padding-block: 30px 32px;
+  }
+  .intro h1 {
+    font-size: clamp(40px, 9vw, 58px);
+    max-width: 16ch;
+  }
+  .intro p,
+  .story p {
+    font-size: 15px;
+  }
+  .heroMedia {
+    height: 420px;
+    border-radius: 20px;
+  }
+  .explorer,
+  .story,
+  .journey,
+  .values,
+  .closeSection {
+    padding-block: 52px;
+  }
+  .application {
+    grid-template-columns: 1fr;
+  }
+  .applicationImage {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+  .applicationCopy {
+    padding: 28px 24px;
+  }
+  .tabs {
+    gap: 8px;
+  }
+  .tabs button {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  .journeyIntro {
+    position: static;
+  }
+  .journeyIntro h2 {
+    max-width: 17ch;
+  }
+  .journeySteps article {
+    grid-template-columns: 110px 1fr;
+    gap: 18px;
+    padding: 16px;
+  }
+  .journeySteps h3 {
+    font-size: 22px;
+  }
+  .journeySteps p {
+    font-size: 13px;
+  }
+  .valueRows article {
+    padding: 24px;
+    gap: 14px;
+  }
+  .closeSection {
+    align-items: start;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .filterBar {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .lightboxCaption {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+  .lightboxImage {
+    height: 50dvh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .galleryImage img,
+  .galleryImage,
+  .tabs button {
+    transition: none;
+  }
+}
