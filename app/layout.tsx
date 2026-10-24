@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Bodoni_Moda, Manrope, Roboto, Space_Grotesk } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
@@ -75,6 +76,7 @@ export default function RootLayout({
         <SiteHeader />
         <div id="main-content">{children}</div>
         <SiteFooter />
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
